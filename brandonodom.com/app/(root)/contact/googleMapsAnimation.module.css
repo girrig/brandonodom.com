@@ -1,0 +1,35 @@
+@keyframes googleColors {
+  0% { color: #4285F4; } /* Google Blue */
+  20% { color: #4285F4; } /* Google Blue - hold */
+  25% { color: #EA4335; } /* Google Red */
+  45% { color: #EA4335; } /* Google Red - hold */
+  50% { color: #FBBC05; } /* Google Yellow */
+  70% { color: #FBBC05; } /* Google Yellow - hold */
+  75% { color: #34A853; } /* Google Green */
+  95% { color: #34A853; } /* Google Green - hold */
+  100% { color: #4285F4; } /* Back to Blue */
+}
+
+@keyframes googleBgColors {
+  0% { background-color: #4285F4; } /* Google Blue */
+  20% { background-color: #4285F4; } /* Google Blue - hold */
+  25% { background-color: #EA4335; } /* Google Red */
+  45% { background-color: #EA4335; } /* Google Red - hold */
+  50% { background-color: #FBBC05; } /* Google Yellow */
+  70% { background-color: #FBBC05; } /* Google Yellow - hold */
+  75% { background-color: #34A853; } /* Google Green */
+  95% { background-color: #34A853; } /* Google Green - hold */
+  100% { background-color: #4285F4; } /* Back to Blue */
+}
+
+.googleMapsLink:hover .locationIcon {
+  animation: googleBgColors 4s infinite;
+}
+
+.googleMapsLink:hover .locationIcon svg {
+  color: white;
+}
+
+.googleMapsLink:hover .locationText {
+  animation: googleColors 4s infinite;
+}
