@@ -4,7 +4,7 @@ const page = () => {
       <div className="flex flex-col">
         {/* Resume Panel */}
         <div className="flex-1 p-8 overflow-y-auto">
-          <div className="w-full max-w-4xl mx-auto bg-white shadow-sm p-12 relative">
+          <div className="w-full max-w-4xl mx-auto bg-white shadow-xs p-12 relative">
             {/* Download PDF button */}
             <div className="absolute top-6 right-6">
               <button className="px-4 py-2 bg-black text-white text-sm hover:bg-gray-800 transition-colors">
@@ -333,35 +333,35 @@ const page = () => {
                     Development
                   </h4>
                   <div className="flex flex-wrap">
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
                       Python
                     </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
                       TypeScript
                     </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
                       Java
                     </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
                       AWS
                     </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
                       HTML5
                     </span>
 
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
                       React
                     </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
                       Next.js
                     </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
                       Tailwind
                     </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
                       ROS
                     </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
                       CLIPS
                     </span>
                   </div>
@@ -372,19 +372,19 @@ const page = () => {
                     Design
                   </h4>
                   <div className="flex flex-wrap">
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
                       UI Design
                     </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
                       UX Design
                     </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
                       Prototyping
                     </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
                       User Research
                     </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
                       Human Factors
                     </span>
                   </div>
@@ -395,25 +395,25 @@ const page = () => {
                     Tools
                   </h4>
                   <div className="flex flex-wrap">
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
                       VS Code
                     </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
                       Terminal
                     </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
                       LLMs
                     </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
                       Git
                     </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
                       Microsoft Office
                     </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
                       Notion
                     </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
                       IntelliJ IDEA
                     </span>
                   </div>
@@ -424,13 +424,13 @@ const page = () => {
                     Professional
                   </h4>
                   <div className="flex flex-wrap">
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
                       Agile/Scrum
                     </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
                       Design Leadership
                     </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
                       Time Management
                     </span>
                   </div>

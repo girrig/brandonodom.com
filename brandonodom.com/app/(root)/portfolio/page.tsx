@@ -21,10 +21,10 @@ const page = () => {
         <div className="flex-1 pb-8 px-8 overflow-y-auto">
           <div className="max-w-4xl mx-auto space-y-8">
             {/* CodeStar and CodeCatalyst - Image on Left */}
-            <div className="bg-white rounded-lg shadow-sm p-6">
+            <div className="bg-white rounded-lg shadow-xs p-6">
               <div className="flex flex-col md:flex-row">
                 <div className="w-full md:w-1/2 md:pr-8 mb-6 md:mb-0">
-                  <div className="relative overflow-hidden rounded flex items-center justify-center">
+                  <div className="relative overflow-hidden rounded-sm flex items-center justify-center">
                     <Image
                       src="/portfolio/CodeStarCodeCatalyst.png"
                       alt="CodeStar and CodeCatalyst Images"
@@ -71,10 +71,10 @@ const page = () => {
             </div>
 
             {/* Therabot- Image on Right */}
-            <div className="bg-white rounded-lg shadow-sm p-6">
+            <div className="bg-white rounded-lg shadow-xs p-6">
               <div className="flex flex-col md:flex-row-reverse">
                 <div className="w-full md:w-1/2 md:pl-8 mb-6 md:mb-0">
-                  <div className="relative overflow-hidden rounded flex items-center justify-center">
+                  <div className="relative overflow-hidden rounded-sm flex items-center justify-center">
                     <Image
                       src="/portfolio/therabot.png"
                       alt="Therabot image"
@@ -115,10 +115,10 @@ const page = () => {
             </div>
 
             {/* ANVEL-ROS - Image on Left */}
-            <div className="bg-white rounded-lg shadow-sm p-6">
+            <div className="bg-white rounded-lg shadow-xs p-6">
               <div className="flex flex-col md:flex-row">
                 <div className="w-full md:w-1/2 md:pr-8 mb-6 md:mb-0">
-                  <div className="relative overflow-hidden rounded flex items-center justify-center">
+                  <div className="relative overflow-hidden rounded-sm flex items-center justify-center">
                     <Image
                       src="/portfolio/ANVELROS.png"
                       alt="ANVELROS Bridge image"
@@ -161,10 +161,10 @@ const page = () => {
             </div>
 
             {/* Llama Game - Image on Right */}
-            <div className="bg-white rounded-lg shadow-sm p-6">
+            <div className="bg-white rounded-lg shadow-xs p-6">
               <div className="flex flex-col md:flex-row-reverse">
                 <div className="w-full md:w-1/2 md:pl-8 mb-6 md:mb-0">
-                  <div className="relative overflow-hidden rounded flex items-center justify-center">
+                  <div className="relative overflow-hidden rounded-sm flex items-center justify-center">
                     <Image
                       src="/portfolio/llamagame.png"
                       alt="Llama Game image"
@@ -215,10 +215,10 @@ const page = () => {
             </div>
 
             {/* Houses of Cards - Image on Left */}
-            <div className="bg-white rounded-lg shadow-sm p-6">
+            <div className="bg-white rounded-lg shadow-xs p-6">
               <div className="flex flex-col md:flex-row">
                 <div className="w-full md:w-1/2 md:pr-8 mb-6 md:mb-0">
-                  <div className="relative overflow-hidden rounded flex items-center justify-center">
+                  <div className="relative overflow-hidden rounded-sm flex items-center justify-center">
                     <Image
                       src="/portfolio/housesofcards.png"
                       alt="Houses of Cards image"

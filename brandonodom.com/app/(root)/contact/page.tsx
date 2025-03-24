@@ -6,7 +6,7 @@ const page = () => {
       <div className="flex flex-col">
         {/* Top content panel - Contact Info */}
         <div className="w-full px-8 pb-2 pt-8 md:px-16 flex justify-center">
-          <div className="max-w-4xl text-center bg-white p-8 rounded-lg shadow-sm">
+          <div className="max-w-4xl text-center bg-white p-8 rounded-lg shadow-xs">
             <h1 className="text-3xl font-light mb-3">Contact Me</h1>
             <div className="h-px w-16 bg-gray-300 mb-3 mx-auto"></div>
             <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed mb-4">
@@ -180,13 +180,13 @@ const page = () => {
                   <label className="absolute text-xs text-gray-500 left-3 top-1">
                     Name
                   </label>
-                  <input className="w-full px-3 pt-5 pb-2 text-sm bg-white border border-gray-200 rounded-md shadow-sm focus:border-gray-400 focus:ring-1 focus:ring-gray-400 focus:outline-none transition-all" />
+                  <input className="w-full px-3 pt-5 pb-2 text-sm bg-white border border-gray-200 rounded-md shadow-xs focus:border-gray-400 focus:ring-1 focus:ring-gray-400 focus:outline-hidden transition-all" />
                 </div>
                 <div className="relative">
                   <label className="absolute text-xs text-gray-500 left-3 top-1">
                     Email
                   </label>
-                  <input className="w-full px-3 pt-5 pb-2 text-sm bg-white border border-gray-200 rounded-md shadow-sm focus:border-gray-400 focus:ring-1 focus:ring-gray-400 focus:outline-none transition-all" />
+                  <input className="w-full px-3 pt-5 pb-2 text-sm bg-white border border-gray-200 rounded-md shadow-xs focus:border-gray-400 focus:ring-1 focus:ring-gray-400 focus:outline-hidden transition-all" />
                 </div>
               </div>
 
@@ -197,7 +197,7 @@ const page = () => {
                     Message
                   </label>
                   <textarea
-                    className="w-full h-full px-3 pt-5 pb-2 text-sm bg-white border border-gray-200 rounded-md shadow-sm focus:border-gray-400 focus:ring-1 focus:ring-gray-400 focus:outline-none transition-all"
+                    className="w-full h-full px-3 pt-5 pb-2 text-sm bg-white border border-gray-200 rounded-md shadow-xs focus:border-gray-400 focus:ring-1 focus:ring-gray-400 focus:outline-hidden transition-all"
                     rows={3}
                   />
                 </div>
