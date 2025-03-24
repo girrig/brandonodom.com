@@ -4,43 +4,52 @@ const About = () => {
   return (
     <>
       <div className="flex flex-col">
-        {/* Main content container with max-width */}
-        <div className="max-w-5xl w-full flex mx-auto">
+        {/* Main content container*/}
+        <div className="max-w-6xl w-full flex mx-auto">
           {/* Left content panel - About Me text */}
-          <div className="w-1/2 p-16 flex flex-col justify-center">
+          <div className="w-1/2 p-12 flex flex-col justify-center">
             <div>
               <div className="text-xs tracking-widest uppercase text-gray-500 mb-1">
                 About Me
               </div>
-              <h1 className="text-4xl font-light mb-6">John Doe</h1>
+              <h1 className="text-4xl font-light mb-6">Brandon Odom</h1>
               <div className="h-px w-16 bg-gray-300 mb-6"></div>
               <p className="text-gray-600 max-w-md leading-relaxed mb-4">
-                I'm a designer and developer with over 10 years of experience
-                creating thoughtful digital experiences that balance form and
-                function.
+                I am a Software Developer with over 10 years of combined
+                experience across both academia and the tech industry. My main
+                interests are in coding APIs and optimizing workflows.
               </p>
               <p className="text-gray-600 max-w-md leading-relaxed mb-4">
-                Based in Stockholm, I work with clients worldwide to build
-                products that are both beautiful and usable. My approach
-                combines minimalist aesthetics with user-centered design
-                principles.
+                I graduated with a Master’s Degree in Computer Science with a
+                specialization in Artificial Intelligence from Mississippi State
+                University. In academia, I worked all across the software
+                spectrum from UI design and implementation to cross platform
+                APIs and integration with the Robot Operating System (ROS).
+              </p>
+              <p className="text-gray-600 max-w-md leading-relaxed mb-4">
+                In my professional career, I worked at Amazon Web Services for 3
+                years. I was a member of the CodeCatalyst team, formally
+                CodeStar team. I helped launch multiple new products and
+                features while maintaining and updating our existing services. I
+                am currently working on a website redesign for a client in the
+                metal refinery industry.
+              </p>
+              <p className="text-gray-600 max-w-md leading-relaxed mb-4">
+                My personal projects mainly revolve around the realms of game
+                dev or financial markets. In my free time I enjoy playing video
+                games, hiking, music, and traveling.
               </p>
               <p className="text-gray-600 max-w-md leading-relaxed">
-                When I'm not designing interfaces or writing code, you'll find
-                me exploring photography, reading design theory, or
-                experimenting with typography.
+                To learn more about my work, check out my Portfolio(link) page.
               </p>
-              <div className="mt-8 flex flex-wrap">
-                {/* Expertise and Tools moved to portfolio page */}
-              </div>
             </div>
           </div>
           {/* Right content panel - Photo */}
-          <div className="w-1/2 p-16 flex items-center justify-center">
-            <div className="w-4/5 relative overflow-hidden bg-gray-100">
+          <div className="w-1/2 p-12 flex items-center justify-center">
+            <div className="relative overflow-hidden bg-gray-100">
               <Image
-                src="/aboutme.png"
-                alt="portrait"
+                src="/portrait.png"
+                alt="Author Portrait"
                 width={400}
                 height={500}
                 className="w-full h-full object-contain"

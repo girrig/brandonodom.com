@@ -2,10 +2,10 @@ const page = () => {
   return (
     <>
       <div className="flex flex-col">
-        {/* Resume content */}
+        {/* Resume Panel */}
         <div className="flex-1 p-8 overflow-y-auto">
           <div className="w-full max-w-4xl mx-auto bg-white shadow-sm p-12 relative">
-            {/* Download PDF button moved to top right of resume */}
+            {/* Download PDF button */}
             <div className="absolute top-6 right-6">
               <button className="px-4 py-2 bg-black text-white text-sm hover:bg-gray-800 transition-colors">
                 Download PDF
@@ -14,10 +14,8 @@ const page = () => {
 
             {/* Resume Header */}
             <div className="border-b border-gray-200 pb-6 mb-8">
-              <h1 className="text-4xl font-light mb-2">John Doe</h1>
-              <h2 className="text-xl text-gray-600 mb-4">
-                Senior UI/UX Designer
-              </h2>
+              <h1 className="text-4xl font-light mb-2">Brandon Odom</h1>
+              <h2 className="text-xl text-gray-600 mb-4">Software Engineer</h2>
 
               <div className="flex flex-wrap text-sm text-gray-600">
                 <div className="mr-6 mb-2 flex items-center">
@@ -34,7 +32,7 @@ const page = () => {
                       d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                     />
                   </svg>
-                  contact@johndoe.com
+                  brandon.david.odom@gmail.com
                 </div>
                 <div className="mr-6 mb-2 flex items-center">
                   <svg
@@ -50,7 +48,7 @@ const page = () => {
                       d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                     />
                   </svg>
-                  +46 70 123 4567
+                  (228) 493-6366
                 </div>
                 <div className="mr-6 mb-2 flex items-center">
                   <svg
@@ -72,7 +70,7 @@ const page = () => {
                       d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                     />
                   </svg>
-                  Stockholm, Sweden
+                  Austin, Texas
                 </div>
                 <div className="mb-2 flex items-center">
                   <svg
@@ -94,7 +92,7 @@ const page = () => {
                       d="M10.172 13.828a4 4 0 015.656 0l4 4a4 4 0 01-5.656 5.656l-1.102-1.101"
                     />
                   </svg>
-                  johndoe.com
+                  brandonodom.com
                 </div>
               </div>
             </div>
@@ -108,29 +106,24 @@ const page = () => {
               <div className="mb-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h4 className="text-base font-medium text-gray-800">
-                    Senior UI/UX Designer
+                    Software Engineer
                   </h4>
-                  <span className="text-sm text-gray-500">2020 - Present</span>
+                  <span className="text-sm text-gray-500">
+                    Nov 2024 - Present
+                  </span>
                 </div>
                 <div className="text-sm font-medium text-gray-600 mb-2">
-                  Design Studio Stockholm
+                  Unnamed Industrial Metal Company
                 </div>
                 <ul className="text-sm text-gray-600 space-y-1 pl-4 list-disc">
                   <li>
-                    Led redesign of Nordea Banking Platform, increasing user
-                    task completion by 34%
+                    Leading redesign of a large industrial metal company's
+                    website
                   </li>
+                  <li>Leveraging contemporary web dev stack and tools</li>
                   <li>
-                    Created comprehensive design system now used by 40+
-                    designers across 3 teams
-                  </li>
-                  <li>
-                    Mentored 5 junior designers, introducing biweekly design
-                    critiques
-                  </li>
-                  <li>
-                    Reduced design-to-development handoff time by 60% through
-                    improved processes
+                    Building out back end infrastructure to create a long
+                    lasting and maintainable product
                   </li>
                 </ul>
               </div>
@@ -138,58 +131,93 @@ const page = () => {
               <div className="mb-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h4 className="text-base font-medium text-gray-800">
-                    UI Designer
+                    Software Development Engineer
                   </h4>
-                  <span className="text-sm text-gray-500">2017 - 2020</span>
+                  <span className="text-sm text-gray-500">
+                    Sept 2019 - Jul 2022
+                  </span>
                 </div>
                 <div className="text-sm font-medium text-gray-600 mb-2">
-                  Tech Innovations Inc.
+                  Amazon Web Services
                 </div>
                 <ul className="text-sm text-gray-600 space-y-1 pl-4 list-disc">
+                  <li>Contributed to the release of two new products</li>
                   <li>
-                    Redesigned flagship product UI, contributing to 28% increase
-                    in user engagement
+                    Upgraded and maintenanced crucial live service
+                    infrastructure
                   </li>
                   <li>
-                    Introduced mobile-first design approach, expanding product
-                    reach by 45%
+                    Routinely worked on-call to address critical and after-hours
+                    issues
                   </li>
                   <li>
-                    Led user testing sessions with 150+ participants to inform
-                    design decisions
-                  </li>
-                  <li>
-                    Created interactive prototypes for 12 major feature releases
+                    Created and maintained internal documentation and run books
                   </li>
                 </ul>
               </div>
 
               <div className="mb-6">
+                <div className="flex justify-between items-baseline">
+                  <h4 className="text-base font-medium text-gray-800">
+                    Graduate Research Assistant
+                  </h4>
+                  <span className="text-sm text-gray-500">
+                    Jan 2016 - Dec 2017
+                  </span>
+                </div>
                 <div className="flex justify-between items-baseline mb-1">
                   <h4 className="text-base font-medium text-gray-800">
-                    Frontend Developer
+                    Student Worker
                   </h4>
-                  <span className="text-sm text-gray-500">2015 - 2017</span>
+                  <span className="text-sm text-gray-500">
+                    May 2014 - Dec 2015
+                  </span>
                 </div>
                 <div className="text-sm font-medium text-gray-600 mb-2">
-                  Digital Agency
+                  Center for Advanced Vehicular Systems
                 </div>
                 <ul className="text-sm text-gray-600 space-y-1 pl-4 list-disc">
                   <li>
-                    Developed responsive websites for clients across various
-                    industries
+                    Worked with Autonomous Navigation Virtual Environment
+                    Laboratory (ANVEL), a high-fidelity real-time simulation
+                    environment
                   </li>
                   <li>
-                    Collaborated with designers to implement pixel-perfect
-                    interfaces
+                    Created a network bridge to allow for communication between
+                    ANVEL and the Robotic Operating System (ROS)
+                  </li>
+                  <li>Developed multiple UIs for human factors studies</li>
+                  <li>
+                    Assisted in robot modification in maintenance both hardware
+                    and software
+                  </li>
+                </ul>
+              </div>
+              <div className="mb-6">
+                <div className="flex justify-between items-baseline">
+                  <h4 className="text-base font-medium text-gray-800">
+                    IT Intern
+                  </h4>
+                  <span className="text-sm text-gray-500">
+                    May 2012 - Jul 2012; May 2013 - Jul 2013
+                  </span>
+                </div>
+
+                <div className="text-sm font-medium text-gray-600 mb-2">
+                  St. Stanislaus College
+                </div>
+                <ul className="text-sm text-gray-600 space-y-1 pl-4 list-disc">
+                  <li>
+                    Created accounts and conducted PowerGrade set up for
+                    incoming teachers
                   </li>
                   <li>
-                    Optimized site performance, improving load times by an
-                    average of 40%
+                    Assisted summer personnel by troubleshooting various
+                    computer issues
                   </li>
                   <li>
-                    Implemented accessibility improvements to meet WCAG 2.0
-                    standards
+                    Performed routine maintenance and upgrades on all computers
+                    on campus
                   </li>
                 </ul>
               </div>
@@ -204,25 +232,26 @@ const page = () => {
               <div className="mb-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h4 className="text-base font-medium text-gray-800">
-                    MSc in Interaction Design
+                    MS in Computer Science
                   </h4>
                   <span className="text-sm text-gray-500">2013 - 2015</span>
                 </div>
                 <div className="text-sm font-medium text-gray-600 mb-2">
-                  Royal Institute of Technology
+                  Mississippi State University
                 </div>
                 <ul className="text-sm text-gray-600 space-y-1 pl-4 list-disc">
+                  <li>Specialization: Artificial Intelligence</li>
                   <li>
-                    Thesis: "Minimalism in Digital Interfaces: Impact on User
-                    Experience"
+                    Master&apos;s Project: &quot;Therabot UI: Creating a
+                    human-friendly interface for Therabot interaction&quot;
                   </li>
                   <li>
-                    Research Assistant for Prof. Anna Eriksson's work on
-                    accessibility standards
+                    Worked under Prof. Cindy Bethel on numerous social robotic
+                    projects and papers
                   </li>
                   <li>
-                    Won Best Design Project Award for collaborative healthcare
-                    app prototype
+                    Worked with Prof. Chris Archibald on computational pool
+                    simulator CueCard
                   </li>
                 </ul>
               </div>
@@ -230,22 +259,18 @@ const page = () => {
               <div className="mb-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h4 className="text-base font-medium text-gray-800">
-                    BSc in Computer Science
+                    BS in Computer Science
                   </h4>
                   <span className="text-sm text-gray-500">2010 - 2013</span>
                 </div>
                 <div className="text-sm font-medium text-gray-600 mb-2">
-                  Stockholm University
+                  Mississippi State University
                 </div>
                 <ul className="text-sm text-gray-600 space-y-1 pl-4 list-disc">
-                  <li>Graduated with honors (GPA 3.8/4.0)</li>
+                  <li>Minor: Cognitive Science</li>
                   <li>
-                    Teaching Assistant for Introduction to Web Development
-                    course
-                  </li>
-                  <li>
-                    Member of the university's UX Design Club, organized 3
-                    design workshops
+                    Member of the Social, Therapeutic, and Robotic Systems Lab
+                    (STaRS Lab)
                   </li>
                 </ul>
               </div>
@@ -261,31 +286,37 @@ const page = () => {
                 <div className="flex justify-between items-baseline">
                   <div>
                     <h4 className="text-base font-medium text-gray-800">
-                      "Designing for Simplicity"
+                      &quot;Therabot™: A Robotic Support Companion&quot;
                     </h4>
-                    <p className="text-sm text-gray-600">UX Magazine</p>
+
+                    <p className="text-sm text-gray-600">
+                      Darrow, Sarah, Aaron Kimbrell, Nikhil Lokhande, Nicholas
+                      Dinep-Schneider, T. J. Ciufo, Brandon Odom, Zachary
+                      Henkel, and Cindy L. Bethel. &quot;Therabot™: A Robotic
+                      Support Companion.&quot; In Companion of the 2018 ACM/IEEE
+                      International Conference on Human-Robot Interaction, pp.
+                      37-37. ACM, 2018.
+                    </p>
                   </div>
-                  <span className="text-sm text-gray-500">2022</span>
+                  <span className="text-sm text-gray-500">2018</span>
                 </div>
 
                 <div className="flex justify-between items-baseline">
                   <div>
                     <h4 className="text-base font-medium text-gray-800">
-                      "Component-Based Design Systems"
+                      &quot;ANVEL-ROS: The integration of the robot operating
+                      system with a high-fidelity simulator.&quot;
                     </h4>
-                    <p className="text-sm text-gray-600">Medium</p>
+                    <p className="text-sm text-gray-600">
+                      Hudson, Christopher, Daniel W. Carruth, Cindy L. Bethel,
+                      Alexander Lalejini, and Brandon Odom. &quot;ANVEL-ROS: The
+                      integration of the robot operating system with a
+                      high-fidelity simulator.&quot; In Proceedings of Ground
+                      Vehicle Systems Engineering and Technology Symposium, p.
+                      378. 2015.
+                    </p>
                   </div>
-                  <span className="text-sm text-gray-500">2021</span>
-                </div>
-
-                <div className="flex justify-between items-baseline">
-                  <div>
-                    <h4 className="text-base font-medium text-gray-800">
-                      "The Future of Responsive Web Design"
-                    </h4>
-                    <p className="text-sm text-gray-600">Smashing Magazine</p>
-                  </div>
-                  <span className="text-sm text-gray-500">2020</span>
+                  <span className="text-sm text-gray-500">2015</span>
                 </div>
               </div>
             </div>
@@ -299,6 +330,45 @@ const page = () => {
               <div className="grid grid-cols-2 gap-x-8 gap-y-2">
                 <div className="mb-3">
                   <h4 className="text-base font-medium text-gray-800 mb-2">
+                    Development
+                  </h4>
+                  <div className="flex flex-wrap">
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                      Python
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                      TypeScript
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                      Java
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                      AWS
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                      HTML5
+                    </span>
+
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                      React
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                      Next.js
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                      Tailwind
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                      ROS
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                      CLIPS
+                    </span>
+                  </div>
+                </div>
+
+                <div className="mb-3">
+                  <h4 className="text-base font-medium text-gray-800 mb-2">
                     Design
                   </h4>
                   <div className="flex flex-wrap">
@@ -309,39 +379,13 @@ const page = () => {
                       UX Design
                     </span>
                     <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
-                      Wireframing
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
                       Prototyping
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
-                      Design Systems
                     </span>
                     <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
                       User Research
                     </span>
-                  </div>
-                </div>
-
-                <div className="mb-3">
-                  <h4 className="text-base font-medium text-gray-800 mb-2">
-                    Development
-                  </h4>
-                  <div className="flex flex-wrap">
                     <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
-                      HTML5 & CSS3
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
-                      JavaScript
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
-                      React
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
-                      TypeScript
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
-                      SASS/SCSS
+                      Human Factors
                     </span>
                   </div>
                 </div>
@@ -352,19 +396,25 @@ const page = () => {
                   </h4>
                   <div className="flex flex-wrap">
                     <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
-                      Figma
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
-                      Adobe XD
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
-                      Sketch
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
                       VS Code
                     </span>
                     <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                      Terminal
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                      LLMs
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
                       Git
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                      Microsoft Office
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                      Notion
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                      IntelliJ IDEA
                     </span>
                   </div>
                 </div>
@@ -375,13 +425,13 @@ const page = () => {
                   </h4>
                   <div className="flex flex-wrap">
                     <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
+                      Agile/Scrum
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
                       Design Leadership
                     </span>
                     <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
-                      Project Management
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded mr-2 mb-2">
-                      Agile/Scrum
+                      Time Management
                     </span>
                   </div>
                 </div>
@@ -397,27 +447,16 @@ const page = () => {
               <div className="space-y-2">
                 <div className="flex justify-between">
                   <span className="text-sm text-gray-800">
-                    Nielsen Norman Group UX Certification
+                    Institutional Review Board (IRB) Certification
                   </span>
-                  <span className="text-sm text-gray-500">2022</span>
+                  <span className="text-sm text-gray-500">2015</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-sm text-gray-800">
-                    Advanced React Patterns, Frontend Masters
+                    International Traffic in Arms Regulations (ITAR)
+                    Certification
                   </span>
-                  <span className="text-sm text-gray-500">2021</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-sm text-gray-800">
-                    Design Systems Workshop with Brad Frost
-                  </span>
-                  <span className="text-sm text-gray-500">2020</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-sm text-gray-800">
-                    TypeScript for UI Developers
-                  </span>
-                  <span className="text-sm text-gray-500">2019</span>
+                  <span className="text-sm text-gray-500">2014</span>
                 </div>
               </div>
             </div>
@@ -430,12 +469,8 @@ const page = () => {
 
               <div className="space-y-3">
                 <p className="text-sm text-gray-600">
-                  Languages: English (Fluent), Swedish (Native), German
-                  (Intermediate)
-                </p>
-                <p className="text-sm text-gray-600">
-                  UX Mentor at Stockholm Tech Incubator (2021-Present), Web
-                  Accessibility Workshop Instructor (2020)
+                  Alumni of the Social, Therapeutic, and Robotic Systems Lab
+                  (STaRS Lab)
                 </p>
               </div>
             </div>

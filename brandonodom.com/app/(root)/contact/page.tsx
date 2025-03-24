@@ -4,20 +4,41 @@ const page = () => {
   return (
     <>
       <div className="flex flex-col">
-        {/* Top content panel - Contact intro */}
+        {/* Top content panel - Contact Info */}
         <div className="w-full px-8 pb-2 pt-8 md:px-16 flex justify-center">
           <div className="max-w-4xl text-center bg-white p-8 rounded-lg shadow-sm">
             <h1 className="text-3xl font-light mb-3">Contact Me</h1>
             <div className="h-px w-16 bg-gray-300 mb-3 mx-auto"></div>
             <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed mb-4">
-              Interested in working together? Let's connect and discuss your
-              project. I'm currently available for new opportunities.
+              The easiest way to contact me would be via{" "}
+              <a
+                href="mailto:brandon.david.odom@gmail.com"
+                className="text-gray-600 hover:text-blue-600 transition-colors"
+              >
+                Email
+              </a>
+              . I don&apos;t have any social media other than{" "}
+              <a
+                href="https://www.linkedin.com/in/brandonodom/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-600 hover:text-blue-500 transition-colors"
+              >
+                LinkedIn
+              </a>
+              . You can also find both my professional and personal GitHub repos
+              below.
             </p>
 
             <div className="flex justify-center mb-6">
               <div className="flex flex-col space-y-3">
-                {/* LinkedIn - Modified with group hover */}
-                <a href="#" className="flex items-center group">
+                {/* LinkedIn */}
+                <a
+                  href="https://www.linkedin.com/in/brandonodom/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center group"
+                >
                   <div className="w-9 h-9 rounded-full bg-gray-200 flex items-center justify-center text-gray-600 group-hover:bg-blue-500 group-hover:text-white group-hover:shadow-md transition-all transform group-hover:scale-110 mr-3">
                     <svg
                       className="w-4 h-4"
@@ -28,11 +49,16 @@ const page = () => {
                     </svg>
                   </div>
                   <span className="text-sm text-gray-600 group-hover:text-blue-500 transition-colors">
-                    johndoe
+                    Brandon Odom
                   </span>
                 </a>
-                {/* GitHub 1 - Modified with group hover */}
-                <a href="#" className="flex items-center group">
+                {/* Professional GitHub */}
+                <a
+                  href="https://github.com/brandonodom"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center group"
+                >
                   <div className="w-9 h-9 rounded-full bg-gray-200 flex items-center justify-center text-gray-600 group-hover:bg-purple-700 group-hover:text-white group-hover:shadow-md transition-all transform group-hover:scale-110 mr-3">
                     <svg
                       className="w-4 h-4"
@@ -43,11 +69,16 @@ const page = () => {
                     </svg>
                   </div>
                   <span className="text-sm text-gray-600 group-hover:text-purple-700 transition-colors">
-                    johndoe-dev
+                    (Professional) brandonodom
                   </span>
                 </a>
-                {/* GitHub 2 - Modified with group hover */}
-                <a href="#" className="flex items-center group">
+                {/* Personal GitHub */}
+                <a
+                  href="https://github.com/girrig"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center group"
+                >
                   <div className="w-9 h-9 rounded-full bg-gray-200 flex items-center justify-center text-gray-600 group-hover:bg-purple-700 group-hover:text-white group-hover:shadow-md transition-all transform group-hover:scale-110 mr-3">
                     <svg
                       className="w-4 h-4"
@@ -58,17 +89,17 @@ const page = () => {
                     </svg>
                   </div>
                   <span className="text-sm text-gray-600 group-hover:text-purple-700 transition-colors">
-                    johndoe-projects
+                    (Personal) girrig
                   </span>
                 </a>
               </div>
             </div>
 
             <div className="flex justify-center gap-6 mb-4">
-              {/* Email link - Modified with group hover */}
+              {/* Email Link */}
               <div className="flex items-center justify-center">
                 <a
-                  href="mailto:contact@johndoe.com"
+                  href="mailto:brandon.david.odom@gmail.com"
                   className="flex items-center group"
                 >
                   <div className="w-7 h-7 rounded-full bg-gray-100 flex items-center justify-center mr-2 group-hover:bg-blue-100 transition-colors">
@@ -87,14 +118,14 @@ const page = () => {
                     </svg>
                   </div>
                   <span className="text-xs text-gray-600 group-hover:text-blue-600 transition-colors">
-                    contact@johndoe.com
+                    brandon.david.odom@gmail.com
                   </span>
                 </a>
               </div>
-              {/* Location link - Modified with Google colors hover animation */}
+              {/* Location Link */}
               <div className="flex items-center justify-center">
                 <a
-                  href="https://www.google.com/maps?q=Stockholm,Sweden"
+                  href="https://www.google.com/maps/place/Austin,Texas"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`flex items-center ${styles.googleMapsLink}`}
@@ -125,7 +156,7 @@ const page = () => {
                   <span
                     className={`text-xs text-gray-600 transition-colors ${styles.locationText}`}
                   >
-                    Stockholm, Sweden
+                    Austin, Texas
                   </span>
                 </a>
               </div>
@@ -133,12 +164,12 @@ const page = () => {
           </div>
         </div>
 
-        {/* Simple divider */}
+        {/* Divider */}
         <div className="flex justify-center my-4">
           <div className="h-px w-80 bg-gray-300"></div>
         </div>
 
-        {/* Bottom content panel - Contact form */}
+        {/* Bottom content panel - Contact Form */}
         <div className="w-full px-8 pt-2 pb-6 md:px-16 bg-gray-50 flex justify-center">
           <div className="max-w-2xl w-full text-center">
             <h2 className="text-xl font-light mb-4">Send a Message</h2>

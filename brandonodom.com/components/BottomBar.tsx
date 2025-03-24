@@ -4,7 +4,9 @@ const Footer = () => {
   return (
     <footer className="bg-white border-t border-gray-100 px-12 py-6">
       <div className="flex justify-center gap-4">
-        <p className="text-sm text-gray-500">&copy; {currentYear} John Doe</p>
+        <p className="text-sm text-gray-500">
+          &copy; {currentYear} Brandon Odom
+        </p>
         <a
           href="https://github.com/girrig/brandonodom.com"
           target="_blank"

@@ -1,9 +1,12 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+
 const NavBar = () => {
   const pathname = usePathname();
+
   // Helper function to determine link styling based on the current page
   const getLinkStyling = (path: string) => {
     const isActive = pathname === path;
@@ -11,6 +14,7 @@ const NavBar = () => {
       isActive ? "text-black font-medium" : "text-gray-400 hover:text-gray-800"
     }`;
   };
+
   return (
     <header className="h-20 bg-white border-b border-gray-100 px-12 flex items-center justify-between z-10">
       {/* Left side: Logo and Name */}
@@ -27,11 +31,12 @@ const NavBar = () => {
             priority
             className="transform transition-transform group-hover:scale-105"
           />
-          <span className="text-lg font-light ml-3 transition-colors group-hover:text-black">
-            John Doe
+          <span className="text-lg font-light ml-2 transition-colors group-hover:text-black">
+            Brandon Odom
           </span>
         </Link>
       </div>
+
       {/* Right side: Navigation Links */}
       <nav className="flex items-center space-x-8">
         <Link href="/" className={getLinkStyling("/")}>
