@@ -1,13 +1,31 @@
-const page = () => {
+"use client";
+
+import { useRef } from "react";
+import { generateResumePdf } from "./generateResumePdf";
+
+const Page = () => {
+  const resumeRef = useRef<HTMLDivElement>(null);
+
+  // Way too specific Claude helper function for downloading the PDF
+  const handleGeneratePdf = () => {
+    generateResumePdf(resumeRef.current);
+  };
+
   return (
     <>
       <div className="flex flex-col">
         {/* Resume Panel */}
         <div className="flex-1 p-8 overflow-y-auto">
-          <div className="w-full max-w-4xl mx-auto bg-white shadow-xs p-12 relative">
+          <div
+            ref={resumeRef}
+            className="w-full max-w-4xl mx-auto bg-white shadow-xs p-12 relative"
+          >
             {/* Download PDF button */}
             <div className="absolute top-6 right-6">
-              <button className="px-4 py-2 bg-black text-white text-sm hover:bg-gray-800 transition-colors">
+              <button
+                onClick={handleGeneratePdf}
+                className="download-button px-4 py-2 bg-black text-white text-sm hover:bg-gray-800 transition-colors"
+              >
                 Download PDF
               </button>
             </div>
@@ -117,7 +135,7 @@ const page = () => {
                 </div>
                 <ul className="text-sm text-gray-600 space-y-1 pl-4 list-disc">
                   <li>
-                    Leading redesign of a large industrial metal company's
+                    Leading redesign of a large industrial metal company&apos;s
                     website
                   </li>
                   <li>Leveraging contemporary web dev stack and tools</li>
@@ -481,4 +499,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

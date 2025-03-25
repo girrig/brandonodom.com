@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const About = () => {
+const page = () => {
   return (
     <>
       <div className="flex flex-col">
@@ -63,4 +63,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default page;
