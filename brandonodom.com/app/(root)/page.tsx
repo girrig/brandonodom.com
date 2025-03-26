@@ -17,26 +17,26 @@ const page = () => {
               <p className="text-gray-600 max-w-md leading-relaxed mb-4">
                 I am a Software Developer with over 10 years of combined
                 experience across both academia and the tech industry. My main
-                interests are in coding APIs and optimizing workflows.
+                interests are in coding APIs and CI/CD.
               </p>
               <p className="text-gray-600 max-w-md leading-relaxed mb-4">
-                I graduated with a Master’s Degree in Computer Science with a
-                specialization in Artificial Intelligence from Mississippi State
-                University. In academia, I worked all across the software
+                I graduated with a Master&apos;s Degree in Computer Science with
+                a specialization in Artificial Intelligence from Mississippi
+                State University. In academia, I worked all across the software
                 spectrum from UI design and implementation to cross platform
-                APIs and integration with the Robot Operating System (ROS).
+                APIs.
               </p>
               <p className="text-gray-600 max-w-md leading-relaxed mb-4">
                 In my professional career, I worked at Amazon Web Services for 3
                 years. I was a member of the CodeCatalyst team, formally
                 CodeStar team. I helped launch multiple new products and
                 features while maintaining and updating our existing services. I
-                am currently working on a website redesign for a client in the
-                metal refinery industry.
+                am currently working as a freelance software developer helping
+                redesign a website for a large client.
               </p>
               <p className="text-gray-600 max-w-md leading-relaxed mb-4">
                 My personal projects mainly revolve around the realms of game
-                dev or financial markets. In my free time I enjoy playing video
+                dev and financial markets. In my free time I enjoy playing video
                 games, hiking, music, and traveling.
               </p>
               <p className="text-gray-600 max-w-md leading-relaxed">
