@@ -366,7 +366,6 @@ const Page = () => {
                     <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
                       HTML5
                     </span>
-
                     <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
                       React
                     </span>
@@ -433,6 +432,12 @@ const Page = () => {
                     </span>
                     <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
                       IntelliJ IDEA
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      Unreal Engine
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      Maya
                     </span>
                   </div>
                 </div>

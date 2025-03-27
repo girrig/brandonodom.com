@@ -26,8 +26,8 @@ const page = () => {
               >
                 LinkedIn
               </a>
-              . You can also find both my professional and personal GitHub repos
-              below.
+              . You can also find both my professional and personal GitHub
+              accounts below.
             </p>
 
             <div className="flex justify-center mb-6">
