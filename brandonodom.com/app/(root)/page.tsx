@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const page = () => {
   return (
@@ -40,7 +41,14 @@ const page = () => {
                 games, hiking, music, and traveling.
               </p>
               <p className="text-gray-600 max-w-md leading-relaxed">
-                To learn more about my work, check out my Portfolio(link) page.
+                To learn more about my work, check out my{" "}
+                <Link
+                  href="/portfolio"
+                  className="text-gray-600 hover:text-blue-600 transition-colors"
+                >
+                  Portfolio
+                </Link>{" "}
+                page.
               </p>
             </div>
           </div>
