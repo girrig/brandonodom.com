@@ -6,9 +6,9 @@ const page = () => {
     <>
       <div className="flex flex-col">
         {/* Main content container*/}
-        <div className="max-w-6xl w-full flex mx-auto">
+        <div className="max-w-6xl w-full flex flex-col md:flex-row mx-auto">
           {/* Left content panel - About Me text */}
-          <div className="w-1/2 p-12 flex flex-col justify-center">
+          <div className="w-full md:w-1/2 pt-3 pb-6 px-6 md:p-12 flex flex-col justify-center order-2 md:order-1">
             <div>
               <div className="text-xs tracking-widest uppercase text-gray-500 mb-1">
                 About Me
@@ -53,8 +53,8 @@ const page = () => {
             </div>
           </div>
           {/* Right content panel - Photo */}
-          <div className="w-1/2 p-12 flex items-center justify-center">
-            <div className="relative overflow-hidden bg-gray-100">
+          <div className="w-full md:w-1/2 p-3 md:p-12 flex items-center justify-center order-1 md:order-2">
+            <div className="relative overflow-hidden bg-gray-100 max-w-xs md:max-w-full mx-auto">
               <Image
                 src="/portrait.png"
                 alt="Author Portrait"
