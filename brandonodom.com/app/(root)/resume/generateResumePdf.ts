@@ -1,3 +1,7 @@
+//
+// THIS EXISTS IN CASE I EVER NEED TO REGENERATE THE RESUME PDF
+//
+
 // This is all Claude 3.7 Sonnet Enhanced voodoo magic
 
 /**

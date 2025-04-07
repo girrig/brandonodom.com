@@ -1,14 +1,8 @@
 "use client";
 
-import { useRef } from "react";
-import { generateResumePdf } from "./generateResumePdf";
-
 const Page = () => {
-  const resumeRef = useRef<HTMLDivElement>(null);
-
-  // Way too specific Claude helper function for downloading the PDF
-  const handleGeneratePdf = () => {
-    generateResumePdf(resumeRef.current);
+  const handleDownloadPdf = () => {
+    window.open("/resume/Brandon_Odom_Resume.pdf", "_blank");
   };
 
   return (
@@ -16,15 +10,12 @@ const Page = () => {
       <div className="flex flex-col">
         {/* Resume Panel */}
         <div className="flex-1 p-8 overflow-y-auto">
-          <div
-            ref={resumeRef}
-            className="w-full max-w-4xl mx-auto bg-white shadow-xs p-12 relative"
-          >
+          <div className="w-full max-w-4xl mx-auto bg-white shadow-xs p-12 relative">
             {/* Download PDF button */}
             <div className="absolute top-6 right-6">
               <button
-                onClick={handleGeneratePdf}
-                className="download-button px-4 py-2 bg-black text-white text-sm hover:bg-gray-800 transition-colors"
+                onClick={handleDownloadPdf}
+                className="px-4 py-2 bg-black text-white text-sm hover:bg-gray-800 transition-colors"
               >
                 Download PDF
               </button>
