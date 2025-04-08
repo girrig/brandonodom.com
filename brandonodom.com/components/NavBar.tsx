@@ -17,8 +17,8 @@ const NavBar = () => {
   // Close mobile menu when screen resizes to desktop
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 768) {
-        // md breakpoint is 768px in Tailwind
+      if (window.innerWidth >= 640) {
+        // sm breakpoint is 640px in Tailwind
         setIsMenuOpen(false);
       }
     };
@@ -38,7 +38,7 @@ const NavBar = () => {
   };
 
   return (
-    <header className="h-20 bg-white border-b border-gray-100 px-4 md:px-12 flex items-center justify-between z-10">
+    <header className="h-20 bg-white border-b border-gray-100 px-4 sm:px-12 flex items-center justify-between z-10">
       {/* Left side: Logo and Name */}
       <div className="flex items-center">
         <Link
@@ -60,7 +60,7 @@ const NavBar = () => {
       </div>
 
       {/* Right side: Desktop Navigation Links */}
-      <nav className="flex max-md:hidden items-center space-x-8">
+      <nav className="flex max-sm:hidden items-center space-x-8">
         <Link href="/" className={getLinkStyling("/")}>
           Home
           {pathname === "/" && (
@@ -89,7 +89,7 @@ const NavBar = () => {
 
       {/* Hamburger Menu Button (visible only on mobile) */}
       <button
-        className="hidden max-md:flex flex-col space-y-1.5 p-2"
+        className="hidden max-sm:flex flex-col space-y-1.5 p-2"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         aria-label="Toggle menu"
       >
