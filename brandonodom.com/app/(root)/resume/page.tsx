@@ -9,8 +9,8 @@ const Page = () => {
     <>
       <div className="flex flex-col">
         {/* Resume Panel */}
-        <div className="flex-1 p-8 overflow-y-auto">
-          <div className="w-full max-w-4xl mx-auto bg-white shadow-xs p-12 relative">
+        <div className="flex-1 p-3 sm:p-8 overflow-y-auto">
+          <div className="w-full max-w-4xl mx-auto bg-white shadow-xs p-5 sm:p-12 relative">
             {/* Desktop Download PDF button */}
             <div className="absolute top-6 right-6 hidden sm:block">
               <button
