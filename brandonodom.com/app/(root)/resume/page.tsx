@@ -11,8 +11,8 @@ const Page = () => {
         {/* Resume Panel */}
         <div className="flex-1 p-8 overflow-y-auto">
           <div className="w-full max-w-4xl mx-auto bg-white shadow-xs p-12 relative">
-            {/* Download PDF button */}
-            <div className="absolute top-6 right-6">
+            {/* Desktop Download PDF button */}
+            <div className="absolute top-6 right-6 hidden sm:block">
               <button
                 onClick={handleDownloadPdf}
                 className="px-4 py-2 bg-black text-white text-sm hover:bg-gray-800 transition-colors"
@@ -103,6 +103,16 @@ const Page = () => {
                   </svg>
                   brandonodom.com
                 </div>
+              </div>
+
+              {/* Mobile Download PDF button (visible only on mobile) */}
+              <div className="sm:hidden mt-4">
+                <button
+                  onClick={handleDownloadPdf}
+                  className="w-full px-3 py-1.5 bg-black text-white text-sm hover:bg-gray-800 transition-colors"
+                >
+                  Download PDF
+                </button>
               </div>
             </div>
 
@@ -202,6 +212,7 @@ const Page = () => {
                   </li>
                 </ul>
               </div>
+
               <div className="mb-6">
                 <div className="flex justify-between items-baseline">
                   <h4 className="text-base font-medium text-gray-800">
@@ -336,7 +347,7 @@ const Page = () => {
                 Skills
               </h3>
 
-              <div className="grid grid-cols-2 gap-x-8 gap-y-2">
+              <div className="grid sm:grid-cols-2 grid-cols-1 gap-x-8 gap-y-2">
                 <div className="mb-3">
                   <h4 className="text-base font-medium text-gray-800 mb-2">
                     Development
