@@ -3,7 +3,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-white border-t border-gray-100 px-12 py-6">
-      <div className="flex justify-center gap-4">
+      <div className="flex flex-wrap justify-center items-center gap-4">
         <p className="text-sm text-gray-500">
           &copy; {currentYear} Brandon Odom
         </p>
