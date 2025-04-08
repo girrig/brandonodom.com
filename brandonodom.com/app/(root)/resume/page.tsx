@@ -106,10 +106,10 @@ const Page = () => {
               </div>
 
               {/* Mobile Download PDF button (visible only on mobile) */}
-              <div className="sm:hidden mt-4">
+              <div className="sm:hidden mt-4 flex justify-center">
                 <button
                   onClick={handleDownloadPdf}
-                  className="w-full px-3 py-1.5 bg-black text-white text-sm hover:bg-gray-800 transition-colors"
+                  className="w-2/3 px-4 py-2 bg-black text-white text-sm hover:bg-gray-800 transition-colors"
                 >
                   Download PDF
                 </button>
