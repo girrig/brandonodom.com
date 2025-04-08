@@ -95,9 +95,11 @@ const page = () => {
               </div>
             </div>
 
-            <div className="flex justify-center gap-6 mb-4">
+            <div className="h-px w-16 bg-gray-300 mb-3 mx-auto"></div>
+
+            <div className="flex flex-col sm:flex-row justify-center sm:gap-6 mb-4">
               {/* Email Link */}
-              <div className="flex items-center justify-center">
+              <div className="flex items-center justify-center mb-2 sm:mb-0">
                 <a
                   href="mailto:brandon.david.odom@gmail.com"
                   className="flex items-center group"
