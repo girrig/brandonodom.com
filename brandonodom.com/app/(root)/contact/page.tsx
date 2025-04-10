@@ -95,7 +95,12 @@ const page = () => {
               </div>
             </div>
 
-            <div className="h-px w-16 bg-gray-300 mb-3 mx-auto"></div>
+            {/* Divider */}
+            <div className="flex items-center justify-center my-3">
+              <div className="h-px w-12 bg-gray-300"></div>
+              <div className="mx-2 text-gray-400">◆</div>
+              <div className="h-px w-12 bg-gray-300"></div>
+            </div>
 
             <div className="flex flex-col sm:flex-row justify-center sm:gap-6 mb-4">
               {/* Email Link */}
