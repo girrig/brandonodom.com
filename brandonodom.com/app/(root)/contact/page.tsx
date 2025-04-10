@@ -5,11 +5,11 @@ const page = () => {
     <>
       <div className="flex flex-col">
         {/* Top content panel - Contact Info */}
-        <div className="w-full px-8 pb-2 pt-8 md:px-16 flex justify-center">
-          <div className="max-w-4xl text-center bg-white p-8 rounded-lg shadow-xs">
-            <h1 className="text-3xl font-light mb-3">Contact Me</h1>
+        <div className="w-full px-4 sm:px-8 pb-2 pt-6 sm:pt-8 md:px-16 md:pb-2 md:pt-8 flex justify-center">
+          <div className="max-w-4xl text-center bg-white p-4 sm:p-8 md:p-8 rounded-lg shadow-xs">
+            <h1 className="text-2xl sm:text-3xl font-light mb-3">Contact Me</h1>
             <div className="h-px w-16 bg-gray-300 mb-3 mx-auto"></div>
-            <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed mb-4">
+            <p className="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed mb-4">
               The easiest way to contact me would be via{" "}
               <a
                 href="mailto:brandon.david.odom@gmail.com"
@@ -167,17 +167,17 @@ const page = () => {
         </div>
 
         {/* Divider */}
-        <div className="flex justify-center my-4">
-          <div className="h-px w-80 bg-gray-300"></div>
+        <div className="flex justify-center my-2 sm:my-4">
+          <div className="h-px w-64 sm:w-80 bg-gray-300"></div>
         </div>
 
         {/* Bottom content panel - Contact Form */}
-        <div className="w-full px-8 pt-2 pb-6 md:px-16 bg-gray-50 flex justify-center">
+        <div className="w-full px-4 sm:px-8 pt-2 pb-6 md:px-16 bg-gray-50 flex justify-center">
           <div className="max-w-2xl w-full text-center">
             <h2 className="text-xl font-light mb-4">Send a Message</h2>
-            <div className="flex gap-4 mb-4">
+            <div className="flex flex-col md:flex-row gap-3 md:gap-4 mb-4">
               {/* Left column - Name and Email */}
-              <div className="w-1/2 space-y-3">
+              <div className="w-full md:w-1/2 space-y-3">
                 <div className="relative">
                   <label className="absolute text-xs text-gray-500 left-3 top-1">
                     Name
@@ -193,7 +193,7 @@ const page = () => {
               </div>
 
               {/* Right column - Message */}
-              <div className="w-1/2">
+              <div className="w-full md:w-1/2 mt-3 md:mt-0">
                 <div className="relative h-full">
                   <label className="absolute text-xs text-gray-500 left-3 top-1">
                     Message
