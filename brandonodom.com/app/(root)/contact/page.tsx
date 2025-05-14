@@ -10,14 +10,14 @@ const page = () => {
             <h1 className="text-2xl sm:text-3xl font-light mb-3">Contact Me</h1>
             <div className="h-px w-16 bg-gray-300 mb-3 mx-auto"></div>
             <p className="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed mb-4">
-              The easiest way to contact me would be via{" "}
+              The best way to contact me would be via{" "}
               <a
                 href="mailto:brandon.david.odom@gmail.com"
                 className="text-gray-600 hover:text-blue-600 transition-colors"
               >
-                Email
+                email
               </a>
-              . I don&apos;t have any social media other than{" "}
+              . I may also be contacted on{" "}
               <a
                 href="https://www.linkedin.com/in/brandonodom/"
                 target="_blank"
