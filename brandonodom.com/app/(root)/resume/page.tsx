@@ -125,14 +125,14 @@ const Page = () => {
               <div className="mb-6">
                 <div className="flex justify-between items-baseline mb-1">
                   <h4 className="text-base font-medium text-gray-800">
-                    Software Engineer
+                    Fullstack Software Engineer
                   </h4>
                   <span className="text-sm text-gray-500">
                     Nov 2024 - Present
                   </span>
                 </div>
                 <div className="text-sm font-medium text-gray-600 mb-2">
-                  Unnamed Industrial Metal Company
+                  Freelance
                 </div>
                 <ul className="text-sm text-gray-600 space-y-1 pl-4 list-disc">
                   <li>
