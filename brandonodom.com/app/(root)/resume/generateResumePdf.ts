@@ -17,7 +17,7 @@ export const generateResumePdf = (resumeElement: HTMLElement | null): void => {
 
   // Hide the button before printing
   const downloadButton = document.querySelector(
-    ".download-button"
+    ".download-button",
   ) as HTMLElement;
   if (downloadButton) downloadButton.style.display = "none";
 
@@ -138,6 +138,10 @@ export const generateResumePdf = (resumeElement: HTMLElement | null): void => {
 
       // Add resume content to body
       const resumeClone = resumeElement.cloneNode(true) as HTMLElement;
+
+      // Hide all buttons (e.g. Download PDF) from the cloned content
+      const buttons = resumeClone.querySelectorAll("button");
+      buttons.forEach((btn) => btn.remove());
 
       // Add classes to help with page breaks
       const sections = resumeClone.querySelectorAll(".mb-8");
