@@ -162,8 +162,7 @@ const Page = () => {
                 <ul className="text-sm text-gray-600 space-y-1 pl-4 list-disc">
                   <li>Shipped two new products to production</li>
                   <li>
-                    Upgraded and maintained crucial live service
-                    infrastructure
+                    Upgraded and maintained crucial live service infrastructure
                   </li>
                   <li>
                     Served as on-call engineer, resolving critical production
@@ -207,8 +206,8 @@ const Page = () => {
                   </li>
                   <li>Developed multiple UIs for human factors studies</li>
                   <li>
-                    Assisted in robot modification and maintenance, both hardware
-                    and software
+                    Assisted in robot modification and maintenance, both
+                    hardware and software
                   </li>
                 </ul>
               </div>
@@ -228,8 +227,8 @@ const Page = () => {
                 </div>
                 <ul className="text-sm text-gray-600 space-y-1 pl-4 list-disc">
                   <li>
-                    Created accounts and conducted PowerGrade setup for
-                    incoming teachers
+                    Created accounts and conducted PowerGrade setup for incoming
+                    teachers
                   </li>
                   <li>
                     Provided technical support to summer staff, diagnosing and

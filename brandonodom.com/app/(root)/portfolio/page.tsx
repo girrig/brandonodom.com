@@ -48,9 +48,7 @@ const page = () => {
                     the AWS Code Suite.
                   </p>
                   <ul className="list-disc text-sm text-gray-600 space-y-1 ml-4 mb-3 sm:mb-4">
-                    <li>
-                      Shipped multiple products and features
-                    </li>
+                    <li>Shipped multiple products and features</li>
                     <li>Created and maintained 40+ templates for our users</li>
                     <li>
                       Upgraded and maintained crucial live service
@@ -96,7 +94,7 @@ const page = () => {
                   </p>
                   <ul className="list-disc text-sm text-gray-600 space-y-1 ml-4 mb-3 sm:mb-4">
                     <li>
-                      Built a web UI for sequencing the robot's motors
+                      Built a web UI for sequencing the robot&apos;s motors
                     </li>
                     <li>Contributed to backend motor code</li>
                     <li>Co-authored technical sections of published papers</li>
@@ -140,7 +138,10 @@ const page = () => {
                     simulation.
                   </p>
                   <ul className="list-disc text-sm text-gray-600 space-y-1 ml-4 mb-3 sm:mb-4">
-                    <li>Designed and implemented the ROS side of the ANVEL-ROS bridge</li>
+                    <li>
+                      Designed and implemented the ROS side of the ANVEL-ROS
+                      bridge
+                    </li>
                     <li>Developed multiple UIs for human factors research</li>
                     <li>
                       Assisted in robot modification and maintenance, both
@@ -233,8 +234,8 @@ const page = () => {
                   <p className="text-sm text-gray-600 mb-3 sm:mb-4">
                     Houses of Cards is an upcoming ruling class tabletop game
                     that can be played with or without RPG elements, designed to
-                    be simple to understand and quick to set up. Currently developing a web version with a physical
-                    edition to follow.
+                    be simple to understand and quick to set up. Currently
+                    developing a web version with a physical edition to follow.
                   </p>
                   <ul className="list-disc text-sm text-gray-600 space-y-1 ml-4 mb-3 sm:mb-4">
                     <li>

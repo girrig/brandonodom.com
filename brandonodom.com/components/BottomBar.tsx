@@ -12,7 +12,10 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src="https://img.shields.io/github/last-commit/girrig/brandonodom.com" />
+          <img
+            src="https://img.shields.io/github/last-commit/girrig/brandonodom.com"
+            alt="Last commit badge"
+          />
         </a>
       </div>
     </footer>

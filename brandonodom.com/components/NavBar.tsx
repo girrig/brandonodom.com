@@ -123,7 +123,7 @@ const NavBar = () => {
             href="/"
             className={`${getLinkStyling(
               "/",
-              true
+              true,
             )} text-right mb-1.5 relative group`}
           >
             <span className="relative inline-block">
@@ -137,7 +137,7 @@ const NavBar = () => {
             href="/portfolio"
             className={`${getLinkStyling(
               "/portfolio",
-              true
+              true,
             )} text-right mb-1.5 relative group`}
           >
             <span className="relative inline-block">
@@ -151,7 +151,7 @@ const NavBar = () => {
             href="/resume"
             className={`${getLinkStyling(
               "/resume",
-              true
+              true,
             )} text-right mb-1.5 relative group`}
           >
             <span className="relative inline-block">
@@ -165,7 +165,7 @@ const NavBar = () => {
             href="/contact"
             className={`${getLinkStyling(
               "/contact",
-              true
+              true,
             )} text-right mb-3 relative group`}
           >
             <span className="relative inline-block">

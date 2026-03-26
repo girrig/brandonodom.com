@@ -16,25 +16,27 @@ const page = () => {
               <h1 className="text-4xl font-light mb-6">Brandon Odom</h1>
               <div className="h-px w-16 bg-gray-300 mb-6"></div>
               <p className="text-gray-600 max-w-md leading-relaxed mb-4">
-                I am a Software Engineer with over 10 years of experience
-                across both the tech industry and academia. I specialize in APIs and CI/CD pipelines.
+                I am a Software Engineer with over 10 years of experience across
+                both the tech industry and academia. I specialize in APIs and
+                CI/CD pipelines.
               </p>
               <p className="text-gray-600 max-w-md leading-relaxed mb-4">
                 I hold a Master&apos;s in Computer Science from Mississippi
-                State University, specializing in Artificial Intelligence.
-                My work spans UI design and implementation,
-                cross-platform APIs, and networking.
+                State University, specializing in Artificial Intelligence. My
+                work spans UI design and implementation, cross-platform APIs,
+                and networking.
               </p>
               <p className="text-gray-600 max-w-md leading-relaxed mb-4">
-                I spent 3 years at Amazon Web Services on the CodeCatalyst
-                team (formerly CodeStar), where I launched multiple new products and
+                I spent 3 years at Amazon Web Services on the CodeCatalyst team
+                (formerly CodeStar), where I launched multiple new products and
                 features while maintaining and updating our existing services. I
                 am currently working as a freelance software engineer leading
                 the redesign of a website for a large client.
               </p>
               <p className="text-gray-600 max-w-md leading-relaxed mb-4">
-                My personal projects focus on game development and financial markets. In my free time, I enjoy playing video
-                games, hiking, music, and traveling.
+                My personal projects focus on game development and financial
+                markets. In my free time, I enjoy playing video games, hiking,
+                music, and traveling.
               </p>
               <p className="text-gray-600 max-w-md leading-relaxed">
                 To learn more about my work, check out my{" "}
