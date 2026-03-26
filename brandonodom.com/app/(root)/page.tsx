@@ -16,16 +16,16 @@ const page = () => {
               <h1 className="text-4xl font-light mb-6">Brandon Odom</h1>
               <div className="h-px w-16 bg-gray-300 mb-6"></div>
               <p className="text-gray-600 max-w-md leading-relaxed mb-4">
-                I am a Software Developer with over 10 years of combined
-                experience across both academia and the tech industry. My main
-                interests are in coding APIs and CI/CD.
+                I am a Software Developer with over 10 years of experience
+                across both the tech industry and academia. My main coding
+                interests are in APIs and CI/CD pipelines.
               </p>
               <p className="text-gray-600 max-w-md leading-relaxed mb-4">
                 I graduated with a Master&apos;s Degree in Computer Science with
                 a specialization in Artificial Intelligence from Mississippi
                 State University. In academia, I worked all across the software
                 spectrum from UI design and implementation to cross platform
-                APIs.
+                APIs and networking.
               </p>
               <p className="text-gray-600 max-w-md leading-relaxed mb-4">
                 In my professional career, I worked at Amazon Web Services for 3

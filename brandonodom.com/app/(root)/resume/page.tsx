@@ -162,7 +162,7 @@ const Page = () => {
                 <ul className="text-sm text-gray-600 space-y-1 pl-4 list-disc">
                   <li>Contributed to the release of two new products</li>
                   <li>
-                    Upgraded and maintenanced crucial live service
+                    Upgraded and maintained crucial live service
                     infrastructure
                   </li>
                   <li>
@@ -240,6 +240,167 @@ const Page = () => {
                     on campus
                   </li>
                 </ul>
+              </div>
+            </div>
+
+            {/* Skills Section */}
+            <div className="mb-8">
+              <h3 className="text-lg font-medium mb-4 text-gray-800 border-b border-gray-200 pb-2">
+                Skills
+              </h3>
+
+              <div className="grid sm:grid-cols-2 grid-cols-1 gap-x-8 gap-y-2">
+                <div className="mb-3">
+                  <h4 className="text-base font-medium text-gray-800 mb-2">
+                    Development
+                  </h4>
+                  <div className="flex flex-wrap">
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      TypeScript
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      JavaScript
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      Python
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      Java
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      C++
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      HTML5
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      CSS
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      React
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      Next.js
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      Node.js
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      Tailwind
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      Three.js
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      CI/CD
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      AWS Code Suite
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      AWS CloudFormation
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      ROS
+                    </span>
+                  </div>
+                </div>
+
+                <div className="mb-3">
+                  <h4 className="text-base font-medium text-gray-800 mb-2">
+                    Tools
+                  </h4>
+                  <div className="flex flex-wrap">
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      LLMs
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      VS Code
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      IntelliJ IDEA
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      Terminal
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      Git
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      GitHub
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      Docker
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      Vercel
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      Digital Ocean
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      Unreal Engine
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      Maya
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      Microsoft Office
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      Notion
+                    </span>
+                  </div>
+                </div>
+
+                <div className="mb-3">
+                  <h4 className="text-base font-medium text-gray-800 mb-2">
+                    Design
+                  </h4>
+                  <div className="flex flex-wrap">
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      UI Design
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      UX Design
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      Prototyping
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      User Research
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      Human Factors
+                    </span>
+                  </div>
+                </div>
+
+                <div className="mb-3">
+                  <h4 className="text-base font-medium text-gray-800 mb-2">
+                    Professional
+                  </h4>
+                  <div className="flex flex-wrap">
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      Agile/Scrum
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      On-Call
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      Cross-Team Collaboration
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      Design Leadership
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      Technical Writing
+                    </span>
+                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
+                      Time Management
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -341,130 +502,8 @@ const Page = () => {
               </div>
             </div>
 
-            {/* Skills Section */}
-            <div className="mb-8">
-              <h3 className="text-lg font-medium mb-4 text-gray-800 border-b border-gray-200 pb-2">
-                Skills
-              </h3>
-
-              <div className="grid sm:grid-cols-2 grid-cols-1 gap-x-8 gap-y-2">
-                <div className="mb-3">
-                  <h4 className="text-base font-medium text-gray-800 mb-2">
-                    Development
-                  </h4>
-                  <div className="flex flex-wrap">
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
-                      Python
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
-                      TypeScript
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
-                      Java
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
-                      AWS
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
-                      HTML5
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
-                      React
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
-                      Next.js
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
-                      Tailwind
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
-                      ROS
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
-                      CLIPS
-                    </span>
-                  </div>
-                </div>
-
-                <div className="mb-3">
-                  <h4 className="text-base font-medium text-gray-800 mb-2">
-                    Design
-                  </h4>
-                  <div className="flex flex-wrap">
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
-                      UI Design
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
-                      UX Design
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
-                      Prototyping
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
-                      User Research
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
-                      Human Factors
-                    </span>
-                  </div>
-                </div>
-
-                <div className="mb-3">
-                  <h4 className="text-base font-medium text-gray-800 mb-2">
-                    Tools
-                  </h4>
-                  <div className="flex flex-wrap">
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
-                      VS Code
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
-                      Terminal
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
-                      LLMs
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
-                      Git
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
-                      Microsoft Office
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
-                      Notion
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
-                      IntelliJ IDEA
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
-                      Unreal Engine
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
-                      Maya
-                    </span>
-                  </div>
-                </div>
-
-                <div className="mb-3">
-                  <h4 className="text-base font-medium text-gray-800 mb-2">
-                    Professional
-                  </h4>
-                  <div className="flex flex-wrap">
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
-                      Agile/Scrum
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
-                      Design Leadership
-                    </span>
-                    <span className="px-2 py-1 bg-gray-100 text-xs rounded-sm mr-2 mb-2">
-                      Time Management
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             {/* Certifications Section */}
-            <div className="mb-8">
+            <div>
               <h3 className="text-lg font-medium mb-4 text-gray-800 border-b border-gray-200 pb-2">
                 Certifications
               </h3>
@@ -483,20 +522,6 @@ const Page = () => {
                   </span>
                   <span className="text-sm text-gray-500">2014</span>
                 </div>
-              </div>
-            </div>
-
-            {/* Miscellaneous Section */}
-            <div>
-              <h3 className="text-lg font-medium mb-4 text-gray-800 border-b border-gray-200 pb-2">
-                Miscellaneous
-              </h3>
-
-              <div className="space-y-3">
-                <p className="text-sm text-gray-600">
-                  Alumni of the Social, Therapeutic, and Robotic Systems Lab
-                  (STaRS Lab)
-                </p>
               </div>
             </div>
           </div>

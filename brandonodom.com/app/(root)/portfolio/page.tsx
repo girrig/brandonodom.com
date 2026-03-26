@@ -54,7 +54,7 @@ const page = () => {
                     </li>
                     <li>Created and maintained 40+ templates for our users</li>
                     <li>
-                      Upgraded and maintenanced crucial live service
+                      Upgraded and maintained crucial live service
                       infrastructure
                     </li>
                   </ul>
@@ -131,7 +131,7 @@ const page = () => {
                 <div className="w-full md:w-1/2">
                   <h3 className="text-xl font-medium mb-2">ANVEL-ROS</h3>
                   <div className="text-xs tracking-wider uppercase text-gray-500 mb-3 sm:mb-4">
-                    C++ / Python / ANVEL / ROS / Robotics
+                    Python / C++ / ANVEL / ROS / Robotics
                   </div>
                   <p className="text-sm text-gray-600 mb-3 sm:mb-4">
                     The Autonomous Navigation Virtual Environment Laboratory
