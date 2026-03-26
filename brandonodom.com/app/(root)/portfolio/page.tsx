@@ -42,15 +42,14 @@ const page = () => {
                     Java / CloudFormation / Templates
                   </div>
                   <p className="text-sm text-gray-600 mb-3 sm:mb-4">
-                    Amazon CodeCatalyst, and previously CodeStar (RIP), is a
-                    unified software development service, leveraging the power
-                    of the AWS Code Suite, that enables development teams to
-                    quickly build and deliver scalable applications using AWS.
+                    Amazon CodeCatalyst (previously CodeStar) is a unified
+                    software development service that enables teams to quickly
+                    build and deliver scalable applications on AWS, powered by
+                    the AWS Code Suite.
                   </p>
                   <ul className="list-disc text-sm text-gray-600 space-y-1 ml-4 mb-3 sm:mb-4">
                     <li>
-                      Contributed to the release of multiple products and
-                      features
+                      Shipped multiple products and features
                     </li>
                     <li>Created and maintained 40+ templates for our users</li>
                     <li>
@@ -97,10 +96,10 @@ const page = () => {
                   </p>
                   <ul className="list-disc text-sm text-gray-600 space-y-1 ml-4 mb-3 sm:mb-4">
                     <li>
-                      Created a web UI to more easily sequence the robots motors
+                      Built a web UI for sequencing the robot's motors
                     </li>
-                    <li>Assisted in writing some back end motor code</li>
-                    <li>Wrote a few technical parts of published papers</li>
+                    <li>Contributed to backend motor code</li>
+                    <li>Co-authored technical sections of published papers</li>
                   </ul>
                   <a
                     href="https://mytherabot.com/"
@@ -134,17 +133,17 @@ const page = () => {
                     Python / C++ / ANVEL / ROS / Robotics
                   </div>
                   <p className="text-sm text-gray-600 mb-3 sm:mb-4">
-                    The Autonomous Navigation Virtual Environment Laboratory
-                    (ANVEL) simulator was combined with the Robot Operating
-                    System (ROS) to create a new interface, the ANVEL-ROS
-                    bridge. It was developed to show the realism of the ANVEL
-                    simulator by mimicking the actions of real world robots.
+                    The ANVEL-ROS bridge connects the Autonomous Navigation
+                    Virtual Environment Laboratory (ANVEL) simulator with the
+                    Robot Operating System (ROS). It validates ANVEL&apos;s
+                    realism by replicating real-world robot behaviors in
+                    simulation.
                   </p>
                   <ul className="list-disc text-sm text-gray-600 space-y-1 ml-4 mb-3 sm:mb-4">
-                    <li>Created the ROS side of the ANVEL-ROS bridge</li>
+                    <li>Designed and implemented the ROS side of the ANVEL-ROS bridge</li>
                     <li>Developed multiple UIs for human factors research</li>
                     <li>
-                      Assisted in robot modification in maintenance both
+                      Assisted in robot modification and maintenance, both
                       hardware and software
                     </li>
                   </ul>
@@ -180,12 +179,10 @@ const page = () => {
                     Python / Pygame
                   </div>
                   <p className="text-sm text-gray-600 mb-3 sm:mb-4">
-                    Llama Game is a personal project I started back in 2012. It
-                    was intended to be a fun, small project with simple
-                    mechanics and a basic GUI. But it became more of a
-                    playground to test different types of algorithms with visual
-                    feedback. Also a good friend of mine created some cute
-                    graphics to give it some life.
+                    Llama Game is a personal project I started in 2012. What
+                    began as a small game with simple mechanics evolved into a
+                    sandbox for testing algorithms with visual feedback, with
+                    original art contributed by a friend.
                   </p>
                   <ul className="list-disc text-sm text-gray-600 space-y-1 ml-4 mb-3 sm:mb-4">
                     <li>
@@ -231,15 +228,13 @@ const page = () => {
                 <div className="w-full md:w-1/2">
                   <h3 className="text-xl font-medium mb-2">Houses of Cards</h3>
                   <div className="text-xs tracking-wider uppercase text-gray-500 mb-3 sm:mb-4">
-                    Javascript / Socket.IO
+                    JavaScript / Socket.IO
                   </div>
                   <p className="text-sm text-gray-600 mb-3 sm:mb-4">
                     Houses of Cards is an upcoming ruling class tabletop game
-                    that can be played with or without RPG elements. Designed to
-                    be simple to understand and quick to set up. Currently
-                    developing a web version with a physical one to follow. More
-                    info and links will be added here when it comes closer to
-                    release.
+                    that can be played with or without RPG elements, designed to
+                    be simple to understand and quick to set up. Currently developing a web version with a physical
+                    edition to follow.
                   </p>
                   <ul className="list-disc text-sm text-gray-600 space-y-1 ml-4 mb-3 sm:mb-4">
                     <li>

@@ -139,10 +139,10 @@ const Page = () => {
                     Leading redesign of a large industrial metal company&apos;s
                     website
                   </li>
-                  <li>Leveraging contemporary web dev stack and tools</li>
+                  <li>Building with Next.js, TypeScript, and Tailwind CSS</li>
                   <li>
-                    Building out back end infrastructure to create a long
-                    lasting and maintainable product
+                    Building out backend infrastructure to create a long-lasting
+                    and maintainable product
                   </li>
                 </ul>
               </div>
@@ -160,17 +160,17 @@ const Page = () => {
                   Amazon Web Services
                 </div>
                 <ul className="text-sm text-gray-600 space-y-1 pl-4 list-disc">
-                  <li>Contributed to the release of two new products</li>
+                  <li>Shipped two new products to production</li>
                   <li>
                     Upgraded and maintained crucial live service
                     infrastructure
                   </li>
                   <li>
-                    Routinely worked on-call to address critical and after-hours
+                    Served as on-call engineer, resolving critical production
                     issues
                   </li>
                   <li>
-                    Created and maintained internal documentation and run books
+                    Authored and maintained internal documentation and runbooks
                   </li>
                 </ul>
               </div>
@@ -197,17 +197,17 @@ const Page = () => {
                 </div>
                 <ul className="text-sm text-gray-600 space-y-1 pl-4 list-disc">
                   <li>
-                    Worked with Autonomous Navigation Virtual Environment
-                    Laboratory (ANVEL), a high-fidelity real-time simulation
-                    environment
+                    Conducted research using the Autonomous Navigation Virtual
+                    Environment Laboratory (ANVEL), a high-fidelity real-time
+                    simulator
                   </li>
                   <li>
-                    Created a network bridge to allow for communication between
-                    ANVEL and the Robotic Operating System (ROS)
+                    Engineered a network bridge enabling real-time communication
+                    between ANVEL and the Robot Operating System (ROS)
                   </li>
                   <li>Developed multiple UIs for human factors studies</li>
                   <li>
-                    Assisted in robot modification in maintenance both hardware
+                    Assisted in robot modification and maintenance, both hardware
                     and software
                   </li>
                 </ul>
@@ -228,12 +228,12 @@ const Page = () => {
                 </div>
                 <ul className="text-sm text-gray-600 space-y-1 pl-4 list-disc">
                   <li>
-                    Created accounts and conducted PowerGrade set up for
+                    Created accounts and conducted PowerGrade setup for
                     incoming teachers
                   </li>
                   <li>
-                    Assisted summer personnel by troubleshooting various
-                    computer issues
+                    Provided technical support to summer staff, diagnosing and
+                    resolving hardware and software issues
                   </li>
                   <li>
                     Performed routine maintenance and upgrades on all computers
@@ -427,12 +427,12 @@ const Page = () => {
                     human-friendly interface for Therabot interaction&quot;
                   </li>
                   <li>
-                    Worked under Prof. Cindy Bethel on numerous social robotic
-                    projects and papers
+                    Researched under Prof. Cindy Bethel on multiple social
+                    robotics projects and publications
                   </li>
                   <li>
-                    Worked with Prof. Chris Archibald on computational pool
-                    simulator CueCard
+                    Collaborated with Prof. Chris Archibald on the computational
+                    pool simulator CueCard
                   </li>
                 </ul>
               </div>
