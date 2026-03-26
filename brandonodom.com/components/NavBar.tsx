@@ -38,7 +38,7 @@ const NavBar = () => {
   };
 
   return (
-    <header className="h-20 bg-white border-b border-gray-100 px-4 sm:px-12 flex items-center justify-between z-10">
+    <header className="h-20 bg-white border-b border-gray-100 px-4 sm:px-12 flex items-center justify-between z-10 overflow-visible">
       {/* Left side: Logo and Name */}
       <div className="flex items-center">
         <Link
@@ -48,8 +48,8 @@ const NavBar = () => {
           <Image
             src="/logo.png"
             alt="logo"
-            width={50}
-            height={50}
+            width={75}
+            height={75}
             priority
             className="transform transition-transform group-hover:scale-105"
           />
