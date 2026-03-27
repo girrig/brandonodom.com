@@ -10,6 +10,7 @@ export async function GET(request: Request) {
 
   try {
     const page = await browser.newPage();
+    await page.setViewport({ width: 1024, height: 768 });
     await page.goto(`${origin}/resume-print`, {
       waitUntil: "networkidle0",
     });
@@ -19,9 +20,9 @@ export async function GET(request: Request) {
       printBackground: true,
       margin: {
         top: "0.5in",
-        right: "0.5in",
+        right: "0",
         bottom: "0.5in",
-        left: "0.5in",
+        left: "0",
       },
     });
 

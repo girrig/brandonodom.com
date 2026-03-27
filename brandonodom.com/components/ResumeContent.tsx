@@ -116,11 +116,11 @@ const ResumeContent = ({ onDownload }: ResumeContentProps) => {
 
       {/* Experience Section */}
       <div className="mb-8">
-        <h3 className="text-lg font-medium mb-4 text-gray-800 border-b border-gray-200 pb-2">
+        <h3 className="text-lg font-medium mb-4 text-gray-800 border-b border-gray-200 pb-2 break-after-avoid">
           Professional Experience
         </h3>
 
-        <div className="mb-6">
+        <div className="mb-6 break-inside-avoid">
           <div className="flex justify-between items-baseline mb-1">
             <h4 className="text-base font-medium text-gray-800">
               Fullstack Software Engineer
@@ -143,7 +143,7 @@ const ResumeContent = ({ onDownload }: ResumeContentProps) => {
           </ul>
         </div>
 
-        <div className="mb-6">
+        <div className="mb-6 break-inside-avoid">
           <div className="flex justify-between items-baseline mb-1">
             <h4 className="text-base font-medium text-gray-800">
               Software Development Engineer
@@ -163,7 +163,7 @@ const ResumeContent = ({ onDownload }: ResumeContentProps) => {
           </ul>
         </div>
 
-        <div className="mb-6">
+        <div className="mb-6 break-inside-avoid">
           <div className="flex justify-between items-baseline">
             <h4 className="text-base font-medium text-gray-800">
               Graduate Research Assistant
@@ -197,7 +197,7 @@ const ResumeContent = ({ onDownload }: ResumeContentProps) => {
           </ul>
         </div>
 
-        <div className="mb-6">
+        <div className="mb-6 break-inside-avoid">
           <div className="flex justify-between items-baseline">
             <h4 className="text-base font-medium text-gray-800">IT Intern</h4>
             <span className="text-sm text-gray-500">
@@ -226,11 +226,11 @@ const ResumeContent = ({ onDownload }: ResumeContentProps) => {
 
       {/* Skills Section */}
       <div className="mb-8">
-        <h3 className="text-lg font-medium mb-4 text-gray-800 border-b border-gray-200 pb-2">
+        <h3 className="text-lg font-medium mb-4 text-gray-800 border-b border-gray-200 pb-2 break-after-avoid">
           Skills
         </h3>
 
-        <div className="grid sm:grid-cols-2 grid-cols-1 gap-x-8 gap-y-2">
+        <div className="grid sm:grid-cols-2 grid-cols-1 gap-x-8 gap-y-2 break-inside-avoid">
           <div className="mb-3">
             <h4 className="text-base font-medium text-gray-800 mb-2">
               Development
@@ -383,11 +383,11 @@ const ResumeContent = ({ onDownload }: ResumeContentProps) => {
 
       {/* Education Section */}
       <div className="mb-8">
-        <h3 className="text-lg font-medium mb-4 text-gray-800 border-b border-gray-200 pb-2">
+        <h3 className="text-lg font-medium mb-4 text-gray-800 border-b border-gray-200 pb-2 break-after-avoid">
           Education
         </h3>
 
-        <div className="mb-6">
+        <div className="mb-6 break-inside-avoid">
           <div className="flex justify-between items-baseline mb-1">
             <h4 className="text-base font-medium text-gray-800">
               MS in Computer Science
@@ -414,7 +414,7 @@ const ResumeContent = ({ onDownload }: ResumeContentProps) => {
           </ul>
         </div>
 
-        <div className="mb-6">
+        <div className="mb-6 break-inside-avoid">
           <div className="flex justify-between items-baseline mb-1">
             <h4 className="text-base font-medium text-gray-800">
               BS in Computer Science
@@ -436,11 +436,11 @@ const ResumeContent = ({ onDownload }: ResumeContentProps) => {
 
       {/* Publications Section */}
       <div className="mb-8">
-        <h3 className="text-lg font-medium mb-4 text-gray-800 border-b border-gray-200 pb-2">
+        <h3 className="text-lg font-medium mb-4 text-gray-800 border-b border-gray-200 pb-2 break-after-avoid">
           Publications
         </h3>
 
-        <div className="space-y-3">
+        <div className="space-y-3 break-inside-avoid">
           <div className="flex justify-between items-baseline">
             <div>
               <h4 className="text-base font-medium text-gray-800">
@@ -478,11 +478,11 @@ const ResumeContent = ({ onDownload }: ResumeContentProps) => {
 
       {/* Certifications Section */}
       <div>
-        <h3 className="text-lg font-medium mb-4 text-gray-800 border-b border-gray-200 pb-2">
+        <h3 className="text-lg font-medium mb-4 text-gray-800 border-b border-gray-200 pb-2 break-after-avoid">
           Certifications
         </h3>
 
-        <div className="space-y-2">
+        <div className="space-y-2 break-inside-avoid">
           <div className="flex justify-between">
             <span className="text-sm text-gray-800">
               Institutional Review Board (IRB) Certification
