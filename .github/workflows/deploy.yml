@@ -18,6 +18,17 @@ jobs:
         mkdir -p ~/.ssh
         ssh-keyscan "${{ secrets.DROPLET_IP }}" >> ~/.ssh/known_hosts
     
+    - name: Install Puppeteer system dependencies
+      run: |
+        ssh ${{ secrets.DROPLET_USER }}@${{ secrets.DROPLET_IP }} '
+          # Headless Chrome (used by Puppeteer for PDF generation) requires these shared libraries on Debian
+          sudo apt-get update -q &&
+          sudo apt-get install -y -q \
+            libnss3 libatk1.0-0 libatk-bridge2.0-0 libcups2 libdrm2 \
+            libxkbcommon0 libxcomposite1 libxdamage1 libxrandr2 libgbm1 \
+            libpango-1.0-0 libcairo2 libasound2 libxshmfence1
+        '
+
     - name: SSH, Pull and Restart
       run: |
         ssh ${{ secrets.DROPLET_USER }}@${{ secrets.DROPLET_IP }} '
