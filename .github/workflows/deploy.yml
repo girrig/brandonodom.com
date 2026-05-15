@@ -19,11 +19,10 @@ jobs:
         ssh-keyscan "${{ secrets.DROPLET_IP }}" >> ~/.ssh/known_hosts
     
     - name: SSH, Pull and Restart
-      # unzip: required by puppeteer >= 25 to extract chrome-headless-shell; Debian does not ship it by default
+      # System packages required by puppeteer are installed manually on the server; see README.md > Server Requirements
       # nvm: non-interactive SSH skips .bashrc, so nvm must be sourced explicitly and the default Node version activated
       run: |
         ssh ${{ secrets.DROPLET_USER }}@${{ secrets.DROPLET_IP }} '
-          sudo apt-get install -y unzip &&
           cd ${{ secrets.DEPLOY_PATH }} &&
           git pull origin main &&
           cd brandonodom.com &&
