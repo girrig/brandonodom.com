@@ -1,5 +1,7 @@
 import puppeteer from "puppeteer";
 
+export const dynamic = "force-static";
+
 export async function GET(request: Request) {
   const { origin } = new URL(request.url);
 
