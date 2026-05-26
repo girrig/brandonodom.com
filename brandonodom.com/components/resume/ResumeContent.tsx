@@ -392,7 +392,7 @@ const ResumeContent = ({ onDownload }: ResumeContentProps) => {
             <h4 className="text-base font-medium text-gray-800">
               MS in Computer Science
             </h4>
-            <span className="text-sm text-gray-500">2013 - 2015</span>
+            <span className="text-sm text-gray-500">2015 - 2017</span>
           </div>
           <div className="text-sm font-medium text-gray-600 mb-2">
             Mississippi State University
@@ -419,7 +419,7 @@ const ResumeContent = ({ onDownload }: ResumeContentProps) => {
             <h4 className="text-base font-medium text-gray-800">
               BS in Computer Science
             </h4>
-            <span className="text-sm text-gray-500">2010 - 2013</span>
+            <span className="text-sm text-gray-500">2011 - 2015</span>
           </div>
           <div className="text-sm font-medium text-gray-600 mb-2">
             Mississippi State University
