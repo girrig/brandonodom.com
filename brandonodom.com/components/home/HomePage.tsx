@@ -9,10 +9,7 @@ const HomePage = () => {
         {/* Left content panel - About Me text */}
         <div className="w-full md:w-1/2 pt-3 pb-6 px-6 md:p-12 flex flex-col justify-center order-2 md:order-1">
           <div>
-            <div className="text-xs tracking-widest uppercase text-gray-500 mb-1">
-              About Me
-            </div>
-            <h1 className="text-4xl font-light mb-6">Brandon Odom</h1>
+            <h1 className="text-2xl sm:text-3xl font-light mb-3">About Me</h1>
             <div className="h-px w-16 bg-gray-300 mb-6"></div>
             <p className="text-gray-600 max-w-md leading-relaxed mb-4">
               I am a Software Engineer with over 10 years of experience across

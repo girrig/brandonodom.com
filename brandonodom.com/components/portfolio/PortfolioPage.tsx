@@ -6,12 +6,7 @@ const PortfolioPage = () => {
       {/* Header Section */}
       <div className="w-full pt-6 pb-3 px-4 sm:px-6 flex justify-center items-center">
         <div className="text-center">
-          <div className="text-xs tracking-widest uppercase text-gray-500 mb-1">
-            Portfolio
-          </div>
-          <h1 className="text-2xl sm:text-3xl font-light mb-4 sm:mb-6">
-            Professional and Personal Projects
-          </h1>
+          <h1 className="text-2xl sm:text-3xl font-light mb-3">Portfolio</h1>
           <div className="h-px w-16 bg-gray-300 mb-3 mx-auto"></div>
         </div>
       </div>

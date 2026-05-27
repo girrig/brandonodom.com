@@ -1,9 +1,11 @@
 "use client";
 
-import Image from "next/image";
+import { Megrim } from "next/font/google";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+
+const megrim = Megrim({ subsets: ["latin"], weight: "400" });
 
 const NavBar = () => {
   const pathname = usePathname();
@@ -39,23 +41,10 @@ const NavBar = () => {
 
   return (
     <header className="h-20 bg-white border-b border-gray-100 px-4 sm:px-12 flex items-center justify-between z-10 overflow-visible">
-      {/* Left side: Logo and Name */}
+      {/* Left side: Wordmark */}
       <div className="flex items-center">
-        <Link
-          href="/"
-          className="flex items-center group transition-all duration-300"
-        >
-          <Image
-            src="/logo.png"
-            alt="logo"
-            width={75}
-            height={75}
-            priority
-            className="transform transition-transform group-hover:scale-105"
-          />
-          <span className="text-lg font-light ml-2 transition-colors group-hover:text-black">
-            Brandon Odom
-          </span>
+        <Link href="/" className={`${megrim.className} text-3xl text-black`}>
+          Brandon Odom
         </Link>
       </div>
 
