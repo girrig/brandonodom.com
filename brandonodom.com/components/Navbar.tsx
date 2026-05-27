@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 
 const megrim = Megrim({ subsets: ["latin"], weight: "400" });
 
-const NavBar = () => {
+const Navbar = () => {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -118,7 +118,7 @@ const NavBar = () => {
             <span className="relative inline-block">
               Home
               {pathname === "/" && (
-                <div className="absolute -bottom-1.5 left-[-0.25rem] right-0 h-px bg-black" />
+                <div className="absolute -bottom-1.5 -left-1 right-0 h-px bg-black" />
               )}
             </span>
           </Link>
@@ -132,7 +132,7 @@ const NavBar = () => {
             <span className="relative inline-block">
               Portfolio
               {pathname === "/portfolio" && (
-                <div className="absolute -bottom-1.5 left-[-0.25rem] right-0 h-px bg-black" />
+                <div className="absolute -bottom-1.5 -left-1 right-0 h-px bg-black" />
               )}
             </span>
           </Link>
@@ -146,7 +146,7 @@ const NavBar = () => {
             <span className="relative inline-block">
               Resume
               {pathname === "/resume" && (
-                <div className="absolute -bottom-1.5 left-[-0.25rem] right-0 h-px bg-black" />
+                <div className="absolute -bottom-1.5 -left-1 right-0 h-px bg-black" />
               )}
             </span>
           </Link>
@@ -160,7 +160,7 @@ const NavBar = () => {
             <span className="relative inline-block">
               Contact
               {pathname === "/contact" && (
-                <div className="absolute -bottom-1.5 left-[-0.25rem] right-0 h-px bg-black" />
+                <div className="absolute -bottom-1.5 -left-1 right-0 h-px bg-black" />
               )}
             </span>
           </Link>
@@ -170,4 +170,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Navbar;
