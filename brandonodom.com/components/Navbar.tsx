@@ -1,5 +1,6 @@
 "use client";
 
+import { Menu, X } from "lucide-react";
 import { Megrim } from "next/font/google";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -78,25 +79,11 @@ const Navbar = () => {
 
       {/* Hamburger Menu Button (visible only on mobile) */}
       <button
-        className="hidden max-sm:flex flex-col space-y-1.5 p-2"
+        className="hidden max-sm:flex items-center p-2 text-gray-600"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
         aria-label="Toggle menu"
       >
-        <span
-          className={`block w-6 h-0.5 bg-gray-600 transition-transform duration-300 ${
-            isMenuOpen ? "rotate-45 translate-y-2" : ""
-          }`}
-        ></span>
-        <span
-          className={`block w-6 h-0.5 bg-gray-600 transition-opacity duration-300 ${
-            isMenuOpen ? "opacity-0" : "opacity-100"
-          }`}
-        ></span>
-        <span
-          className={`block w-6 h-0.5 bg-gray-600 transition-transform duration-300 ${
-            isMenuOpen ? "-rotate-45 -translate-y-2" : ""
-          }`}
-        ></span>
+        {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
       </button>
 
       {/* Mobile Dropdown Menu */}
