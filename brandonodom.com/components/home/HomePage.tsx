@@ -12,26 +12,25 @@ const HomePage = () => {
             <h1 className="text-2xl sm:text-3xl font-light mb-3">About Me</h1>
             <div className="h-px w-16 bg-gray-300 mb-6"></div>
             <p className="text-gray-600 max-w-md leading-relaxed mb-4">
-              I am a Software Engineer with over 10 years of experience across
-              both the tech industry and academia. I specialize in APIs and
-              CI/CD pipelines.
+              I&apos;m Brandon, a software engineer with over 10 years of
+              experience across industry and academia. I design and build cloud
+              infrastructure, APIs, and UI.
             </p>
             <p className="text-gray-600 max-w-md leading-relaxed mb-4">
               I hold a Master&apos;s in Computer Science from Mississippi State
-              University, specializing in Artificial Intelligence. My work spans
-              UI design and implementation, cross-platform APIs, and networking.
+              University with a focus in Artificial Intelligence.
             </p>
             <p className="text-gray-600 max-w-md leading-relaxed mb-4">
-              I spent 3 years at Amazon Web Services on the CodeCatalyst team
-              (formerly CodeStar), where I launched multiple new products and
-              features while maintaining and updating our existing services. I
-              am currently working as a freelance software engineer leading the
-              redesign of a website for a large client.
+              I spent three years at Amazon Web Services on the CodeCatalyst
+              team (formerly CodeStar), where I launched several new products
+              and features and served as CodeStar&apos;s primary engineer. Right
+              now I&apos;m doing freelance work, building a website end to end
+              for a B2B industrial metals company.
             </p>
             <p className="text-gray-600 max-w-md leading-relaxed mb-4">
-              My personal projects focus on game development and financial
-              markets. In my free time, I enjoy playing video games, hiking,
-              music, and traveling.
+              My personal projects gravitate toward game development and
+              financial markets. Outside of work, I&apos;m into hiking, music,
+              video games, and travel.
             </p>
             <p className="text-gray-600 max-w-md leading-relaxed">
               To learn more about my work, check out my{" "}
@@ -50,7 +49,7 @@ const HomePage = () => {
           <div className="relative overflow-hidden bg-gray-100 max-w-xs md:max-w-full mx-auto">
             <Image
               src="/portrait.png"
-              alt="Author Portrait"
+              alt="Brandon Odom outdoors near a waterfall"
               width={400}
               height={500}
               className="w-full h-full object-contain"

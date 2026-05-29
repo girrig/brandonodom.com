@@ -115,6 +115,10 @@ const ResumeContent = ({ onDownload }: ResumeContentProps) => {
               maintaining the live service through patches and version upgrades
             </li>
             <li>
+              Created and maintained 40+ project templates that helped CodeStar
+              users bootstrap new projects
+            </li>
+            <li>
               Served as CodeStar&apos;s org-wide point of contact, fielding
               functionality, compliance, and security questions from teams
               across Amazon
@@ -180,7 +184,7 @@ const ResumeContent = ({ onDownload }: ResumeContentProps) => {
           </div>
           <ul className="text-sm text-gray-800 space-y-1 pl-4 list-disc">
             <li>
-              Set up an entire computer lab end to end, cloning drives and
+              Set up a computer lab from scratch, cloning drives and
               standardizing configurations across every machine
             </li>
             <li>

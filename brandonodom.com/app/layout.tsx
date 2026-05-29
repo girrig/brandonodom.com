@@ -3,7 +3,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Brandon Odom",
-  description: "Brandon Odom Personal Website",
+  description:
+    "Software engineer with 10+ years across industry and academia, designing and building cloud infrastructure, APIs, and UI.",
 };
 
 export default function RootLayout({

@@ -11,14 +11,13 @@ const ContactPage = () => {
           <h1 className="text-2xl sm:text-3xl font-light mb-3">Contact Me</h1>
           <div className="h-px w-16 bg-gray-300 mb-3 mx-auto"></div>
           <p className="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed mb-4">
-            The best way to reach me is by{" "}
             <a
               href="mailto:brandon.david.odom@gmail.com"
               className="text-gray-600 hover:text-blue-600 transition-colors"
             >
-              email
-            </a>
-            . I&apos;m also available on{" "}
+              Email
+            </a>{" "}
+            is the best way to reach me. You can also find me on{" "}
             <a
               href="https://www.linkedin.com/in/brandonodom/"
               target="_blank"
@@ -26,9 +25,8 @@ const ContactPage = () => {
               className="text-gray-600 hover:text-blue-500 transition-colors"
             >
               LinkedIn
-            </a>
-            . You can also find both my professional and personal GitHub
-            accounts below.
+            </a>{" "}
+            and GitHub.
           </p>
 
           <div className="flex justify-center mb-6">

@@ -21,7 +21,7 @@ const PortfolioPage = () => {
                 <div className="relative overflow-hidden rounded-sm flex items-center justify-center">
                   <Image
                     src="/portfolio/CodeStarCodeCatalyst.png"
-                    alt="CodeStar and CodeCatalyst Images"
+                    alt="CodeStar and CodeCatalyst logos"
                     width={1024}
                     height={512}
                     className="w-full h-full object-contain"
@@ -42,10 +42,17 @@ const PortfolioPage = () => {
                   AWS Code Suite.
                 </p>
                 <ul className="list-disc text-sm text-gray-600 space-y-1 ml-4 mb-3 sm:mb-4">
-                  <li>Shipped multiple products and features</li>
-                  <li>Created and maintained 40+ templates for our users</li>
                   <li>
-                    Upgraded and maintained crucial live service infrastructure
+                    Bootstraps new projects from 40+ ready-to-use templates
+                    spanning multiple languages and frameworks
+                  </li>
+                  <li>
+                    Bundles source control, CI/CD pipelines, and IDE integration
+                    into a single project workflow
+                  </li>
+                  <li>
+                    Successor CodeCatalyst expands the offering with redesigned
+                    blueprints, team collaboration, and deeper AWS integration
                   </li>
                 </ul>
                 <a
@@ -67,7 +74,7 @@ const PortfolioPage = () => {
                 <div className="relative overflow-hidden rounded-sm flex items-center justify-center">
                   <Image
                     src="/portfolio/therabot.png"
-                    alt="Therabot image"
+                    alt="Therabot logo with a cartoon robotic dog"
                     width={1804}
                     height={975}
                     className="w-full h-full object-contain"
@@ -80,15 +87,24 @@ const PortfolioPage = () => {
                   JavaScript / Three.js / UIkit / Autodesk Maya / Robotics
                 </div>
                 <p className="text-sm text-gray-600 mb-3 sm:mb-4">
-                  Therabot is a robotic dog and support companion for
-                  individuals undergoing therapy. It exhibits a lifelike
-                  awareness of its surroundings, including sensing and
-                  responding to touch.
+                  Therabot is a robotic dog and support companion developed at
+                  Mississippi State&apos;s STaRS Lab, used in therapy with
+                  children &mdash; including those on the autism spectrum and
+                  others in trauma-informed care.
                 </p>
                 <ul className="list-disc text-sm text-gray-600 space-y-1 ml-4 mb-3 sm:mb-4">
-                  <li>Built a web UI for sequencing the robot&apos;s motors</li>
-                  <li>Contributed to backend motor code</li>
-                  <li>Co-authored technical sections of published papers</li>
+                  <li>
+                    Senses and responds to touch with the lifelike awareness of
+                    a real dog
+                  </li>
+                  <li>
+                    Web-based UI for sequencing motors and choreographing
+                    behaviors
+                  </li>
+                  <li>
+                    Documented in peer-reviewed research presented at the
+                    ACM/IEEE HRI conference
+                  </li>
                 </ul>
                 <a
                   href="https://mytherabot.com/"
@@ -109,7 +125,7 @@ const PortfolioPage = () => {
                 <div className="relative overflow-hidden rounded-sm flex items-center justify-center">
                   <Image
                     src="/portfolio/ANVELROS.png"
-                    alt="ANVELROS Bridge image"
+                    alt="ANVEL-ROS bridge architecture diagram"
                     width={577}
                     height={420}
                     className="w-full h-full object-contain"
@@ -122,21 +138,26 @@ const PortfolioPage = () => {
                   Python / C++ / ANVEL / ROS / Robotics
                 </div>
                 <p className="text-sm text-gray-600 mb-3 sm:mb-4">
-                  The ANVEL-ROS bridge connects the Autonomous Navigation
-                  Virtual Environment Laboratory (ANVEL) simulator with the
-                  Robot Operating System (ROS). It validates ANVEL&apos;s
-                  realism by replicating real-world robot behaviors in
-                  simulation.
+                  The ANVEL-ROS bridge is software developed at Mississippi
+                  State&apos;s Center for Advanced Vehicular Systems. It
+                  connects the Autonomous Navigation Virtual Environment
+                  Laboratory (ANVEL) simulator with the Robot Operating System
+                  (ROS), letting robots and their digital twins share commands
+                  and sensor data in real time.
                 </p>
                 <ul className="list-disc text-sm text-gray-600 space-y-1 ml-4 mb-3 sm:mb-4">
                   <li>
-                    Designed and implemented the ROS side of the ANVEL-ROS
-                    bridge
+                    Validates simulator accuracy by running identical commands
+                    on physical robots and their virtual counterparts
                   </li>
-                  <li>Developed multiple UIs for human factors research</li>
                   <li>
-                    Assisted in robot modification and maintenance, both
-                    hardware and software
+                    Pairs with companion UIs for human-factors studies,
+                    measuring how interface design affects robot teleoperation
+                    performance
+                  </li>
+                  <li>
+                    Documented in peer-reviewed research presented at the Ground
+                    Vehicle Systems Engineering and Technology Symposium
                   </li>
                 </ul>
                 <a
@@ -158,7 +179,7 @@ const PortfolioPage = () => {
                 <div className="relative overflow-hidden rounded-sm flex items-center justify-center">
                   <Image
                     src="/portfolio/llamagame.png"
-                    alt="Llama Game image"
+                    alt="Llama Game screenshot of a pixel-art field with trees, a llama, and a tiger"
                     width={640}
                     height={480}
                     className="w-full h-full object-contain"
@@ -171,33 +192,21 @@ const PortfolioPage = () => {
                   Python / Pygame
                 </div>
                 <p className="text-sm text-gray-600 mb-3 sm:mb-4">
-                  Llama Game is a personal project I started in 2012. What began
-                  as a small game with simple mechanics evolved into a sandbox
-                  for testing algorithms with visual feedback, with original art
-                  contributed by a friend.
+                  Llama Game started in 2012 as a summer side project, a way to
+                  keep coding when classes weren&apos;t requiring it. The
+                  original idea was an open-world sim with emergent gameplay;
+                  it&apos;s since become a sandbox for prototyping algorithms
+                  with visual feedback. Original art by{" "}
+                  <a
+                    href="https://twitter.com/RickDolphen"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-blue-500 transition-colors"
+                  >
+                    Rick Dolphen
+                  </a>
+                  .
                 </p>
-                <ul className="list-disc text-sm text-gray-600 space-y-1 ml-4 mb-3 sm:mb-4">
-                  <li>
-                    <a
-                      href="https://brandonodom.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-blue-500 transition-colors"
-                    >
-                      <b>Programming: </b>Brandon Odom
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://twitter.com/RickDolphen"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-blue-500 transition-colors"
-                    >
-                      <b>Art: </b>Rick Dolphen
-                    </a>
-                  </li>
-                </ul>
                 <p className="text-sm font-medium">Project Not Released</p>
               </div>
             </div>
@@ -210,7 +219,7 @@ const PortfolioPage = () => {
                 <div className="relative overflow-hidden rounded-sm flex items-center justify-center">
                   <Image
                     src="/portfolio/housesofcards.png"
-                    alt="Houses of Cards image"
+                    alt="Queen of Hearts playing card"
                     width={225}
                     height={315}
                     className="w-1/2 h-full object-contain mx-auto md:mx-0"
@@ -223,33 +232,22 @@ const PortfolioPage = () => {
                   JavaScript / Socket.IO
                 </div>
                 <p className="text-sm text-gray-600 mb-3 sm:mb-4">
-                  Houses of Cards is an upcoming ruling class tabletop game that
-                  can be played with or without RPG elements, designed to be
-                  simple to understand and quick to set up. Currently developing
-                  a web version with a physical edition to follow.
+                  Houses of Cards is a tabletop card game designed by{" "}
+                  <a
+                    href="https://twitter.com/RazgrizTwo"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-blue-500 transition-colors"
+                  >
+                    Alec Szczechowski
+                  </a>
+                  . It&apos;s playable with any standard deck &mdash; each card
+                  carries its own meaning, suits have built-in affinities, and
+                  gameplay unfolds emergently as a lookup table fires events
+                  based on what&apos;s drawn. A Python build simulates the rules
+                  end to end, and an early web prototype lets players drag and
+                  drop cards on screen.
                 </p>
-                <ul className="list-disc text-sm text-gray-600 space-y-1 ml-4 mb-3 sm:mb-4">
-                  <li>
-                    <a
-                      href="https://twitter.com/RazgrizTwo"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-blue-500 transition-colors"
-                    >
-                      <b>Design: </b>Alec Szczechowski
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://brandonodom.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="hover:text-blue-500 transition-colors"
-                    >
-                      <b>Programming: </b>Brandon Odom
-                    </a>
-                  </li>
-                </ul>
                 <p className="text-sm font-medium">Project Not Released</p>
               </div>
             </div>
