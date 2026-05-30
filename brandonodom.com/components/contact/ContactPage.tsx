@@ -1,5 +1,6 @@
-import { Mail, MapPin, Send } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
+import ContactForm from "./ContactForm";
 import styles from "./googleMapsAnimation.module.css";
 
 const ContactPage = () => {
@@ -131,40 +132,7 @@ const ContactPage = () => {
       <div className="w-full px-4 sm:px-8 pt-2 pb-6 md:px-16 bg-gray-50 flex justify-center">
         <div className="max-w-2xl w-full text-center">
           <h2 className="text-xl font-light mb-4">Send a Message</h2>
-          <div className="flex flex-col md:flex-row gap-3 md:gap-4 mb-4">
-            {/* Left column - Name and Email */}
-            <div className="w-full md:w-1/2 space-y-3">
-              <div className="relative">
-                <label className="absolute text-xs text-gray-500 left-3 top-1">
-                  Name
-                </label>
-                <input className="w-full px-3 pt-5 pb-2 text-sm bg-white border border-gray-200 rounded-md shadow-xs focus:border-gray-400 focus:ring-1 focus:ring-gray-400 focus:outline-hidden transition-all" />
-              </div>
-              <div className="relative">
-                <label className="absolute text-xs text-gray-500 left-3 top-1">
-                  Email
-                </label>
-                <input className="w-full px-3 pt-5 pb-2 text-sm bg-white border border-gray-200 rounded-md shadow-xs focus:border-gray-400 focus:ring-1 focus:ring-gray-400 focus:outline-hidden transition-all" />
-              </div>
-            </div>
-
-            {/* Right column - Message */}
-            <div className="w-full md:w-1/2 mt-3 md:mt-0">
-              <div className="relative h-full">
-                <label className="absolute text-xs text-gray-500 left-3 top-1">
-                  Message
-                </label>
-                <textarea
-                  className="w-full h-full px-3 pt-5 pb-2 text-sm bg-white border border-gray-200 rounded-md shadow-xs focus:border-gray-400 focus:ring-1 focus:ring-gray-400 focus:outline-hidden transition-all"
-                  rows={3}
-                />
-              </div>
-            </div>
-          </div>
-          <button className="px-4 py-2 bg-black text-white text-xs hover:bg-gray-800 transition-colors mx-auto inline-flex items-center gap-2">
-            <Send className="w-3 h-3" />
-            Send Message
-          </button>
+          <ContactForm />
         </div>
       </div>
     </div>
