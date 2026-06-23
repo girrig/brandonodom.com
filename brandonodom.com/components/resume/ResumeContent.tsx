@@ -102,6 +102,25 @@ const ResumeContent = ({ onDownload }: ResumeContentProps) => {
         <div className="mb-6 break-inside-avoid">
           <div className="flex justify-between items-baseline mb-1">
             <h4 className="text-base font-medium text-gray-900">
+              Career Break
+            </h4>
+            <span className="text-sm text-gray-600">Jul 2022 - Nov 2024</span>
+          </div>
+          <div className="text-sm font-medium text-gray-800 mb-2">
+            Family Caregiving
+          </div>
+          <ul className="text-sm text-gray-800 space-y-1 pl-4 list-disc">
+            <li>
+              Relocated home to provide full-time care for an aging family
+              member during a period of medical need; returned to software
+              engineering in 2024
+            </li>
+          </ul>
+        </div>
+
+        <div className="mb-6 break-inside-avoid">
+          <div className="flex justify-between items-baseline mb-1">
+            <h4 className="text-base font-medium text-gray-900">
               Software Development Engineer
             </h4>
             <span className="text-sm text-gray-600">Sept 2019 - Jul 2022</span>
