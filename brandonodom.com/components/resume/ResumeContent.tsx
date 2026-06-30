@@ -111,9 +111,8 @@ const ResumeContent = ({ onDownload }: ResumeContentProps) => {
           </div>
           <ul className="text-sm text-gray-800 space-y-1 pl-4 list-disc">
             <li>
-              Relocated home to provide full-time care for an aging family
-              member during a period of medical need; returned to software
-              engineering in 2024
+              Relocated home to provide care for an aging family member during a
+              period of medical need; returned to software engineering in 2024
             </li>
           </ul>
         </div>

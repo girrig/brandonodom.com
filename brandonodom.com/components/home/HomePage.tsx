@@ -30,7 +30,7 @@ const HomePage = () => {
             <p className="text-gray-600 max-w-md leading-relaxed mb-4">
               My personal projects gravitate toward game development and
               financial markets. Outside of work, I&apos;m into hiking, music,
-              video games, and travel.
+              video games, and travel, and I&apos;m currently learning Japanese.
             </p>
             <p className="text-gray-600 max-w-md leading-relaxed">
               To learn more about my work, check out my{" "}
