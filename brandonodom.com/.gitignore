@@ -17,6 +17,9 @@
 /.next/
 /out/
 
+# generated at deploy time from /resume-print by scripts/generate-resume-pdf.mjs
+/public/resume/Brandon_Odom_Resume.pdf
+
 # production
 /build
 

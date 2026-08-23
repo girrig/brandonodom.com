@@ -3,19 +3,19 @@ import Image from "next/image";
 const PortfolioPage = () => {
   return (
     <div className="flex flex-col">
-      {/* Header Section */}
-      <div className="w-full pt-6 pb-3 px-4 sm:px-6 flex justify-center items-center">
-        <div className="text-center">
-          <h1 className="text-2xl sm:text-3xl font-light mb-3">Portfolio</h1>
-          <div className="h-px w-16 bg-gray-300 mb-3 mx-auto"></div>
+      {/* Padding inside max-w-6xl so the left edge matches the navbar. */}
+      <div className="w-full pt-8 pb-5">
+        <div className="max-w-6xl mx-auto px-4 sm:px-12">
+          <h1 className="text-2xl sm:text-3xl font-normal mb-3">Portfolio</h1>
+          <div className="h-px w-16 bg-gray-300"></div>
         </div>
       </div>
 
       {/* Projects Panel */}
-      <div className="flex-1 pb-6 sm:pb-8 px-4 sm:px-8 overflow-y-auto">
-        <div className="max-w-4xl mx-auto space-y-6 sm:space-y-8">
+      <div className="flex-1 pb-6 sm:pb-8 overflow-y-auto">
+        <div className="max-w-6xl mx-auto px-4 sm:px-12 space-y-6 sm:space-y-8">
           {/* CodeStar and CodeCatalyst - Image on Left */}
-          <div className="bg-white rounded-lg shadow-xs p-4 sm:p-6">
+          <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6">
             <div className="flex flex-col md:flex-row">
               <div className="w-full md:w-1/2 md:pr-8 mb-5 md:mb-0">
                 <div className="relative overflow-hidden rounded-sm flex items-center justify-center">
@@ -68,7 +68,7 @@ const PortfolioPage = () => {
           </div>
 
           {/* Therabot - Image on Right */}
-          <div className="bg-white rounded-lg shadow-xs p-4 sm:p-6">
+          <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6">
             <div className="flex flex-col md:flex-row-reverse">
               <div className="w-full md:w-1/2 md:pl-8 mb-5 md:mb-0">
                 <div className="relative overflow-hidden rounded-sm flex items-center justify-center">
@@ -119,7 +119,7 @@ const PortfolioPage = () => {
           </div>
 
           {/* ANVEL-ROS - Image on Left */}
-          <div className="bg-white rounded-lg shadow-xs p-4 sm:p-6">
+          <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6">
             <div className="flex flex-col md:flex-row">
               <div className="w-full md:w-1/2 md:pr-8 mb-5 md:mb-0">
                 <div className="relative overflow-hidden rounded-sm flex items-center justify-center">
@@ -173,7 +173,7 @@ const PortfolioPage = () => {
           </div>
 
           {/* Llama Game - Image on Right */}
-          <div className="bg-white rounded-lg shadow-xs p-4 sm:p-6">
+          <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6">
             <div className="flex flex-col md:flex-row-reverse">
               <div className="w-full md:w-1/2 md:pl-8 mb-5 md:mb-0">
                 <div className="relative overflow-hidden rounded-sm flex items-center justify-center">
@@ -213,7 +213,7 @@ const PortfolioPage = () => {
           </div>
 
           {/* Houses of Cards - Image on Left */}
-          <div className="bg-white rounded-lg shadow-xs p-4 sm:p-6">
+          <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6">
             <div className="flex flex-col md:flex-row">
               <div className="w-full md:w-1/2 md:pr-8 mb-5 md:mb-0">
                 <div className="relative overflow-hidden rounded-sm flex items-center justify-center">

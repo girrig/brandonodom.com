@@ -1,80 +1,71 @@
-import { Download, Globe, Mail, MapPin, Phone } from "lucide-react";
+import { Globe, Mail, MapPin, Phone } from "lucide-react";
 
-interface ResumeContentProps {
-  onDownload?: () => void;
-}
-
-const ResumeContent = ({ onDownload }: ResumeContentProps) => {
+const ResumeContent = () => {
   return (
     <>
-      {/* Desktop Download PDF button */}
-      {onDownload && (
-        <div className="absolute top-6 right-6 hidden sm:block">
-          <button
-            onClick={onDownload}
-            className="px-4 py-2 bg-black text-white text-sm hover:bg-gray-800 transition-colors inline-flex items-center gap-2"
-          >
-            <Download className="w-4 h-4" />
-            Download PDF
-          </button>
+      {/* Masthead */}
+      <div className="mb-12">
+        <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between sm:gap-10">
+          <div>
+            <h1 className="text-4xl font-medium tracking-tight text-gray-900 mb-1">
+              Brandon Odom
+            </h1>
+            <h2 className="text-xl text-gray-600">Software Engineer</h2>
+          </div>
+
+          {/* Contact details */}
+          <div className="shrink-0 space-y-1 text-sm text-gray-800">
+            <div className="flex items-center">
+              <Mail className="w-4 h-4 mr-2 shrink-0 text-gray-500" />
+              <a
+                href="mailto:brandon.david.odom@gmail.com"
+                className="text-inherit no-underline"
+              >
+                brandon.david.odom@gmail.com
+              </a>
+            </div>
+            <div className="flex items-center">
+              <Globe className="w-4 h-4 mr-2 shrink-0 text-gray-500" />
+              <a
+                href="https://brandonodom.com"
+                className="text-inherit no-underline"
+              >
+                brandonodom.com
+              </a>
+            </div>
+            <div className="flex items-center">
+              <Phone className="w-4 h-4 mr-2 shrink-0 text-gray-500" />
+              (228) 493-6366
+            </div>
+            <div className="flex items-center">
+              <MapPin className="w-4 h-4 mr-2 shrink-0 text-gray-500" />
+              Austin, Texas
+            </div>
+          </div>
         </div>
-      )}
-
-      {/* Resume Header */}
-      <div className="mb-8">
-        <h1 className="text-4xl font-light mb-2">Brandon Odom</h1>
-        <h2 className="text-xl text-gray-800 mb-4">Software Engineer</h2>
-
-        <div className="flex flex-wrap text-sm text-gray-800">
-          <div className="mr-6 mb-2 flex items-center">
-            <Mail className="w-4 h-4 mr-2" />
-            brandon.david.odom@gmail.com
-          </div>
-          <div className="mr-6 mb-2 flex items-center">
-            <Phone className="w-4 h-4 mr-2" />
-            (228) 493-6366
-          </div>
-          <div className="mr-6 mb-2 flex items-center">
-            <MapPin className="w-4 h-4 mr-2" />
-            Austin, Texas
-          </div>
-          <div className="mb-2 flex items-center">
-            <Globe className="w-4 h-4 mr-2" />
-            brandonodom.com
-          </div>
-        </div>
-
-        {/* Mobile Download PDF button */}
-        {onDownload && (
-          <div className="sm:hidden mt-4 flex justify-center">
-            <button
-              onClick={onDownload}
-              className="w-2/3 px-4 py-2 bg-black text-white text-sm hover:bg-gray-800 transition-colors flex items-center justify-center gap-2"
-            >
-              <Download className="w-4 h-4" />
-              Download PDF
-            </button>
-          </div>
-        )}
       </div>
 
       {/* Experience Section */}
       <div className="mb-8">
-        <h3 className="text-lg font-medium mb-4 text-gray-900 border-b border-gray-300 pb-2 break-after-avoid">
+        <h3 className="text-base font-bold uppercase tracking-[0.15em] mb-3 text-gray-900 border-b border-gray-300 pb-2 break-after-avoid">
           Professional Experience
         </h3>
 
-        <div className="mb-6 break-inside-avoid">
-          <div className="flex justify-between items-baseline mb-1">
-            <h4 className="text-base font-medium text-gray-900">
-              Fullstack Software Engineer
-            </h4>
-            <span className="text-sm text-gray-600">Nov 2024 - Present</span>
+        <div className="mb-5">
+          <div className="break-inside-avoid">
+            <div className="flex justify-between items-baseline mb-1 break-after-avoid">
+              <h4 className="text-lg font-semibold text-gray-900">
+                Fullstack Software Engineer
+              </h4>
+              <span className="text-sm text-gray-800 tabular-nums">
+                Nov 2024 - Present
+              </span>
+            </div>
+            <div className="text-sm font-medium text-gray-900 mb-2 break-after-avoid">
+              Freelance
+            </div>
           </div>
-          <div className="text-sm font-medium text-gray-800 mb-2">
-            Freelance
-          </div>
-          <ul className="text-sm text-gray-800 space-y-1 pl-4 list-disc">
+          <ul className="text-sm text-gray-800 space-y-1 pl-4 list-disc leading-normal">
             <li>
               Leading the end-to-end website redesign for a B2B industrial metal
               products company as the sole engineer and designer, replacing an
@@ -99,17 +90,21 @@ const ResumeContent = ({ onDownload }: ResumeContentProps) => {
           </ul>
         </div>
 
-        <div className="mb-6 break-inside-avoid">
-          <div className="flex justify-between items-baseline mb-1">
-            <h4 className="text-base font-medium text-gray-900">
-              Career Break
-            </h4>
-            <span className="text-sm text-gray-600">Jul 2022 - Nov 2024</span>
+        <div className="mb-5">
+          <div className="break-inside-avoid">
+            <div className="flex justify-between items-baseline mb-1 break-after-avoid">
+              <h4 className="text-lg font-semibold text-gray-900">
+                Career Break
+              </h4>
+              <span className="text-sm text-gray-800 tabular-nums">
+                Jul 2022 - Nov 2024
+              </span>
+            </div>
+            <div className="text-sm font-medium text-gray-900 mb-2 break-after-avoid">
+              Family Caregiving
+            </div>
           </div>
-          <div className="text-sm font-medium text-gray-800 mb-2">
-            Family Caregiving
-          </div>
-          <ul className="text-sm text-gray-800 space-y-1 pl-4 list-disc">
+          <ul className="text-sm text-gray-800 space-y-1 pl-4 list-disc leading-normal">
             <li>
               Relocated home to provide care for an aging family member during a
               period of medical need; returned to software engineering in 2024
@@ -117,17 +112,21 @@ const ResumeContent = ({ onDownload }: ResumeContentProps) => {
           </ul>
         </div>
 
-        <div className="mb-6 break-inside-avoid">
-          <div className="flex justify-between items-baseline mb-1">
-            <h4 className="text-base font-medium text-gray-900">
-              Software Development Engineer
-            </h4>
-            <span className="text-sm text-gray-600">Sept 2019 - Jul 2022</span>
+        <div className="mb-5">
+          <div className="break-inside-avoid">
+            <div className="flex justify-between items-baseline mb-1 break-after-avoid">
+              <h4 className="text-lg font-semibold text-gray-900">
+                Software Development Engineer
+              </h4>
+              <span className="text-sm text-gray-800 tabular-nums">
+                Sept 2019 - Jul 2022
+              </span>
+            </div>
+            <div className="text-sm font-medium text-gray-900 mb-2 break-after-avoid">
+              Amazon Web Services
+            </div>
           </div>
-          <div className="text-sm font-medium text-gray-800 mb-2">
-            Amazon Web Services
-          </div>
-          <ul className="text-sm text-gray-800 space-y-1 pl-4 list-disc">
+          <ul className="text-sm text-gray-800 space-y-1 pl-4 list-disc leading-normal">
             <li>
               Became AWS CodeStar&apos;s primary engineer in just five months,
               maintaining the live service through patches and version upgrades
@@ -156,23 +155,29 @@ const ResumeContent = ({ onDownload }: ResumeContentProps) => {
           </ul>
         </div>
 
-        <div className="mb-6 break-inside-avoid">
-          <div className="flex justify-between items-baseline">
-            <h4 className="text-base font-medium text-gray-900">
-              Graduate Research Assistant
-            </h4>
-            <span className="text-sm text-gray-600">Jan 2016 - Dec 2017</span>
+        <div className="mb-5">
+          <div className="break-inside-avoid">
+            <div className="flex justify-between items-baseline break-after-avoid">
+              <h4 className="text-lg font-semibold text-gray-900">
+                Graduate Research Assistant
+              </h4>
+              <span className="text-sm text-gray-800 tabular-nums">
+                Jan 2016 - Dec 2017
+              </span>
+            </div>
+            <div className="flex justify-between items-baseline mb-1 break-after-avoid">
+              <h4 className="text-lg font-semibold text-gray-900">
+                Student Worker
+              </h4>
+              <span className="text-sm text-gray-800 tabular-nums">
+                May 2014 - Dec 2015
+              </span>
+            </div>
+            <div className="text-sm font-medium text-gray-900 mb-2 break-after-avoid">
+              Center for Advanced Vehicular Systems
+            </div>
           </div>
-          <div className="flex justify-between items-baseline mb-1">
-            <h4 className="text-base font-medium text-gray-900">
-              Student Worker
-            </h4>
-            <span className="text-sm text-gray-600">May 2014 - Dec 2015</span>
-          </div>
-          <div className="text-sm font-medium text-gray-800 mb-2">
-            Center for Advanced Vehicular Systems
-          </div>
-          <ul className="text-sm text-gray-800 space-y-1 pl-4 list-disc">
+          <ul className="text-sm text-gray-800 space-y-1 pl-4 list-disc leading-normal">
             <li>
               Built the ANVEL-ROS bridge, exchanging video, sensor data, and
               control commands between the ROS framework and the ANVEL simulator
@@ -190,17 +195,19 @@ const ResumeContent = ({ onDownload }: ResumeContentProps) => {
           </ul>
         </div>
 
-        <div className="mb-6 break-inside-avoid">
-          <div className="flex justify-between items-baseline">
-            <h4 className="text-base font-medium text-gray-900">IT Intern</h4>
-            <span className="text-sm text-gray-600">
-              May 2012 - Jul 2012; May 2013 - Jul 2013
-            </span>
+        <div className="mb-5">
+          <div className="break-inside-avoid">
+            <div className="flex justify-between items-baseline break-after-avoid">
+              <h4 className="text-lg font-semibold text-gray-900">IT Intern</h4>
+              <span className="text-sm text-gray-800 tabular-nums">
+                May 2012 - Jul 2012; May 2013 - Jul 2013
+              </span>
+            </div>
+            <div className="text-sm font-medium text-gray-900 mb-2 break-after-avoid">
+              St. Stanislaus College
+            </div>
           </div>
-          <div className="text-sm font-medium text-gray-800 mb-2">
-            St. Stanislaus College
-          </div>
-          <ul className="text-sm text-gray-800 space-y-1 pl-4 list-disc">
+          <ul className="text-sm text-gray-800 space-y-1 pl-4 list-disc leading-normal">
             <li>
               Set up a computer lab from scratch, cloning drives and
               standardizing configurations across every machine
@@ -219,13 +226,13 @@ const ResumeContent = ({ onDownload }: ResumeContentProps) => {
 
       {/* Skills Section */}
       <div className="mb-8">
-        <h3 className="text-lg font-medium mb-4 text-gray-900 border-b border-gray-300 pb-2 break-after-avoid">
+        <h3 className="text-base font-bold uppercase tracking-[0.15em] mb-3 text-gray-900 border-b border-gray-300 pb-2 break-after-avoid">
           Skills
         </h3>
 
-        <div className="grid sm:grid-cols-2 grid-cols-1 gap-x-8 gap-y-2 break-inside-avoid">
-          <div className="mb-3">
-            <h4 className="text-base font-medium text-gray-900 mb-2">
+        <div className="grid sm:grid-cols-2 grid-cols-1 gap-x-8 gap-y-2">
+          <div className="mb-3 break-inside-avoid">
+            <h4 className="text-lg font-semibold text-gray-900 mb-2">
               Development
             </h4>
             <div className="flex flex-wrap">
@@ -274,8 +281,8 @@ const ResumeContent = ({ onDownload }: ResumeContentProps) => {
             </div>
           </div>
 
-          <div className="mb-3">
-            <h4 className="text-base font-medium text-gray-900 mb-2">
+          <div className="mb-3 break-inside-avoid">
+            <h4 className="text-lg font-semibold text-gray-900 mb-2">
               Cloud &amp; DevOps
             </h4>
             <div className="flex flex-wrap">
@@ -309,8 +316,8 @@ const ResumeContent = ({ onDownload }: ResumeContentProps) => {
             </div>
           </div>
 
-          <div className="mb-3">
-            <h4 className="text-base font-medium text-gray-900 mb-2">
+          <div className="mb-3 break-inside-avoid">
+            <h4 className="text-lg font-semibold text-gray-900 mb-2">
               Tools &amp; Services
             </h4>
             <div className="flex flex-wrap">
@@ -335,8 +342,8 @@ const ResumeContent = ({ onDownload }: ResumeContentProps) => {
             </div>
           </div>
 
-          <div className="mb-3">
-            <h4 className="text-base font-medium text-gray-900 mb-2">
+          <div className="mb-3 break-inside-avoid">
+            <h4 className="text-lg font-semibold text-gray-900 mb-2">
               Design &amp; Research
             </h4>
             <div className="flex flex-wrap">
@@ -362,24 +369,28 @@ const ResumeContent = ({ onDownload }: ResumeContentProps) => {
 
       {/* Education Section */}
       <div className="mb-8">
-        <h3 className="text-lg font-medium mb-4 text-gray-900 border-b border-gray-300 pb-2 break-after-avoid">
+        <h3 className="text-base font-bold uppercase tracking-[0.15em] mb-3 text-gray-900 border-b border-gray-300 pb-2 break-after-avoid">
           Education
         </h3>
 
-        <div className="mb-6 break-inside-avoid">
-          <div className="flex justify-between items-baseline mb-1">
-            <h4 className="text-base font-medium text-gray-900">
-              MS in Computer Science{" "}
-              <span className="text-sm font-normal text-gray-700 align-baseline">
-                · Artificial Intelligence
+        <div className="mb-5">
+          <div className="break-inside-avoid">
+            <div className="flex justify-between items-baseline mb-1 break-after-avoid">
+              <h4 className="text-lg font-semibold text-gray-900">
+                MS in Computer Science{" "}
+                <span className="text-sm font-normal text-gray-700 align-baseline">
+                  · Artificial Intelligence
+                </span>
+              </h4>
+              <span className="text-sm text-gray-800 tabular-nums">
+                2015 - 2017
               </span>
-            </h4>
-            <span className="text-sm text-gray-600">2015 - 2017</span>
+            </div>
+            <div className="text-sm font-medium text-gray-900 mb-2 break-after-avoid">
+              Mississippi State University
+            </div>
           </div>
-          <div className="text-sm font-medium text-gray-800 mb-2">
-            Mississippi State University
-          </div>
-          <ul className="text-sm text-gray-800 space-y-1 pl-4 list-disc">
+          <ul className="text-sm text-gray-800 space-y-1 pl-4 list-disc leading-normal">
             <li>
               Master&apos;s Project, &quot;Therabot UI&quot;: designed and built
               a human-friendly interface for Therabot, a robotic therapy dog for
@@ -397,20 +408,24 @@ const ResumeContent = ({ onDownload }: ResumeContentProps) => {
           </ul>
         </div>
 
-        <div className="mb-6 break-inside-avoid">
-          <div className="flex justify-between items-baseline mb-1">
-            <h4 className="text-base font-medium text-gray-900">
-              BS in Computer Science{" "}
-              <span className="text-sm font-normal text-gray-700 align-baseline">
-                · Minor in Cognitive Science
+        <div className="mb-5">
+          <div className="break-inside-avoid">
+            <div className="flex justify-between items-baseline mb-1 break-after-avoid">
+              <h4 className="text-lg font-semibold text-gray-900">
+                BS in Computer Science{" "}
+                <span className="text-sm font-normal text-gray-700 align-baseline">
+                  · Minor in Cognitive Science
+                </span>
+              </h4>
+              <span className="text-sm text-gray-800 tabular-nums">
+                2011 - 2015
               </span>
-            </h4>
-            <span className="text-sm text-gray-600">2011 - 2015</span>
+            </div>
+            <div className="text-sm font-medium text-gray-900 mb-2 break-after-avoid">
+              Mississippi State University
+            </div>
           </div>
-          <div className="text-sm font-medium text-gray-800 mb-2">
-            Mississippi State University
-          </div>
-          <ul className="text-sm text-gray-800 space-y-1 pl-4 list-disc">
+          <ul className="text-sm text-gray-800 space-y-1 pl-4 list-disc leading-normal">
             <li>
               Member of the Social, Therapeutic, and Robotic Systems Lab (STaRS
               Lab)
@@ -421,17 +436,17 @@ const ResumeContent = ({ onDownload }: ResumeContentProps) => {
 
       {/* Publications Section */}
       <div className="mb-8">
-        <h3 className="text-lg font-medium mb-4 text-gray-900 border-b border-gray-300 pb-2 break-after-avoid">
+        <h3 className="text-base font-bold uppercase tracking-[0.15em] mb-3 text-gray-900 border-b border-gray-300 pb-2 break-after-avoid">
           Publications
         </h3>
 
-        <div className="space-y-3 break-inside-avoid">
-          <div className="flex justify-between items-baseline">
+        <div className="space-y-3">
+          <div className="flex justify-between items-baseline break-after-avoid">
             <div>
-              <h4 className="text-base font-medium text-gray-900">
+              <h4 className="text-lg font-semibold text-gray-900">
                 &quot;Therabot™: A Robotic Support Companion&quot;
               </h4>
-              <p className="text-sm text-gray-800">
+              <p className="text-sm text-gray-800 leading-relaxed">
                 Darrow, Sarah, Aaron Kimbrell, Nikhil Lokhande, Nicholas
                 Dinep-Schneider, T. J. Ciufo,{" "}
                 <span className="font-semibold">Brandon Odom</span>, Zachary
@@ -440,16 +455,16 @@ const ResumeContent = ({ onDownload }: ResumeContentProps) => {
                 Conference on Human-Robot Interaction, pp. 37-37. ACM, 2018.
               </p>
             </div>
-            <span className="text-sm text-gray-600">2018</span>
+            <span className="text-sm text-gray-800 tabular-nums">2018</span>
           </div>
 
-          <div className="flex justify-between items-baseline">
+          <div className="flex justify-between items-baseline break-after-avoid">
             <div>
-              <h4 className="text-base font-medium text-gray-900">
+              <h4 className="text-lg font-semibold text-gray-900">
                 &quot;ANVEL-ROS: The integration of the robot operating system
                 with a high-fidelity simulator.&quot;
               </h4>
-              <p className="text-sm text-gray-800">
+              <p className="text-sm text-gray-800 leading-relaxed">
                 Hudson, Christopher R., Alexander Lalejini,{" "}
                 <span className="font-semibold">Brandon Odom</span>, Cindy L.
                 Bethel, Daniel W. Carruth, Phillip J. Durst, and Christopher
@@ -459,7 +474,7 @@ const ResumeContent = ({ onDownload }: ResumeContentProps) => {
                 p. 378. 2015.
               </p>
             </div>
-            <span className="text-sm text-gray-600">2015</span>
+            <span className="text-sm text-gray-800 tabular-nums">2015</span>
           </div>
         </div>
       </div>

@@ -2,8 +2,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-white border-t border-gray-100 px-12 py-6">
-      <div className="flex flex-wrap justify-center items-center gap-4">
+    <footer className="bg-white border-t border-gray-100 py-6">
+      <div className="max-w-6xl mx-auto px-4 sm:px-12 flex flex-wrap justify-center items-center gap-4">
         <p className="text-sm text-gray-500">
           &copy; {currentYear} Brandon Odom
         </p>
@@ -12,6 +12,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="https://img.shields.io/github/last-commit/girrig/brandonodom.com"
             alt="Last commit badge"

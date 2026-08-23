@@ -21,6 +21,8 @@ jobs:
     - name: SSH, Pull and Restart
       # System packages required by puppeteer are installed manually on the server; see README.md > Server Requirements
       # nvm: non-interactive SSH skips .bashrc, so nvm must be sourced explicitly and the default Node version activated
+      # generate:pdf runs before the restart: `next start` snapshots public/ at startup, so the
+      # PDF has to be on disk first. It starts its own short-lived server against the fresh build.
       run: |
         ssh ${{ secrets.DROPLET_USER }}@${{ secrets.DROPLET_IP }} '
           cd ${{ secrets.DEPLOY_PATH }} &&
@@ -30,5 +32,6 @@ jobs:
           nvm use default &&
           yarn install --frozen-lockfile &&
           yarn build &&
+          yarn generate:pdf &&
           (pm2 restart brandonodom.com || pm2 start yarn --name "brandonodom.com" -- start)
         '

@@ -1,3 +1,4 @@
+import { urbanist } from "@/fonts";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -13,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={urbanist.variable}>
       <body className={"font-sans antialiased"}>
         <div className="min-h-screen flex flex-col bg-white">{children}</div>
       </body>

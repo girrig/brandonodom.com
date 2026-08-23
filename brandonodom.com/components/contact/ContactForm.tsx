@@ -9,8 +9,10 @@ import { useActionState, useEffect, useRef } from "react";
 
 const initialState: ContactState = { status: "idle" };
 
+// TODO: white fields on a white card leaves the border doing all the work.
+// Revisit with the color pass, when an off-white surface is available.
 const inputClass =
-  "w-full px-3 pt-5 pb-2 text-sm bg-white border border-gray-200 rounded-md shadow-xs focus:border-gray-400 focus:ring-1 focus:ring-gray-400 focus:outline-hidden transition-all";
+  "w-full px-3 pt-5 pb-2 text-sm bg-white border border-gray-400 rounded-md shadow-xs focus:border-gray-600 focus:ring-1 focus:ring-gray-600 focus:outline-hidden transition-all";
 const labelClass = "absolute text-xs text-gray-500 left-3 top-1";
 
 const ContactForm = () => {
@@ -31,62 +33,55 @@ const ContactForm = () => {
 
   return (
     <form ref={formRef} action={formAction}>
-      <div className="flex flex-col md:flex-row gap-3 md:gap-4 mb-4">
-        {/* Left column - Name and Email */}
-        <div className="w-full md:w-1/2 space-y-3">
-          <div className="relative">
-            <label htmlFor="name" className={labelClass}>
-              Name
-            </label>
-            <input
-              ref={nameRef}
-              id="name"
-              name="name"
-              type="text"
-              required
-              maxLength={100}
-              className={inputClass}
-            />
-          </div>
-          <div className="relative">
-            <label htmlFor="email" className={labelClass}>
-              Email
-            </label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              required
-              maxLength={200}
-              className={inputClass}
-            />
-          </div>
+      <div className="space-y-3 mb-6">
+        <div className="relative">
+          <label htmlFor="name" className={labelClass}>
+            Name
+          </label>
+          <input
+            ref={nameRef}
+            id="name"
+            name="name"
+            type="text"
+            required
+            maxLength={100}
+            className={inputClass}
+          />
         </div>
-
-        {/* Right column - Message */}
-        <div className="w-full md:w-1/2 mt-3 md:mt-0">
-          <div className="relative h-full">
-            <label htmlFor="message" className={labelClass}>
-              Message
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              required
-              maxLength={5000}
-              rows={3}
-              className={`${inputClass} h-full`}
-            />
-          </div>
+        <div className="relative">
+          <label htmlFor="email" className={labelClass}>
+            Email
+          </label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            maxLength={200}
+            className={inputClass}
+          />
+        </div>
+        <div className="relative">
+          <label htmlFor="message" className={labelClass}>
+            Message
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            required
+            maxLength={5000}
+            rows={4}
+            className={inputClass}
+          />
         </div>
       </div>
 
       <button
         type="submit"
         disabled={isPending}
-        className="px-4 py-2 bg-black text-white text-xs hover:bg-gray-800 transition-colors mx-auto inline-flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="px-4 py-2 bg-black text-white text-sm hover:bg-gray-800 transition-colors inline-flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        <Send className="w-3 h-3" />
+        <Send className="w-4 h-4" />
         {isPending ? "Sending..." : "Send Message"}
       </button>
 
