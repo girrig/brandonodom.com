@@ -34,20 +34,21 @@ const Navbar = () => {
     return `relative ${
       isMobile ? "py-2.5 text-base w-full" : "px-1 py-2 text-sm"
     } transition-colors ${
-      isActive ? "text-black font-medium" : "text-gray-400 hover:text-gray-800"
+      isActive ? "text-ink font-medium" : "text-muted hover:text-ink"
     }`;
   };
 
   return (
-    <header className="h-20 bg-white border-b border-gray-100 z-10 overflow-visible">
-      <div className="h-full max-w-6xl mx-auto px-4 sm:px-12 flex items-center justify-between">
+    <header className="h-20 z-10 overflow-visible">
+      {/* Rule sits on the inner container so it spans the content, not the viewport */}
+      <div className="h-full max-w-6xl mx-auto px-4 sm:px-12 flex items-center justify-between border-b border-line">
         {/* Left side: Wordmark */}
         <div className="flex items-center">
           {/* 40px because text-5xl overflows an 80px header, and arbitrary
               sizes need their leading set explicitly. */}
           <Link
             href="/"
-            className={`${caveat.className} text-[40px] leading-none font-medium text-black`}
+            className={`${caveat.className} text-[40px] leading-none font-medium text-primary`}
           >
             Brandon Odom
           </Link>
@@ -56,34 +57,34 @@ const Navbar = () => {
         {/* Right side: Desktop Navigation Links */}
         <nav className="flex max-sm:hidden items-center space-x-8">
           <Link href="/" className={getLinkStyling("/")}>
-            Home
+            About Me
             {pathname === "/" && (
-              <div className="absolute bottom-0 left-0 w-full h-px bg-black" />
+              <div className="absolute bottom-0 left-0 w-full h-px bg-ink" />
             )}
           </Link>
           <Link href="/portfolio" className={getLinkStyling("/portfolio")}>
             Portfolio
             {pathname === "/portfolio" && (
-              <div className="absolute bottom-0 left-0 w-full h-px bg-black" />
+              <div className="absolute bottom-0 left-0 w-full h-px bg-ink" />
             )}
           </Link>
           <Link href="/resume" className={getLinkStyling("/resume")}>
             Resume
             {pathname === "/resume" && (
-              <div className="absolute bottom-0 left-0 w-full h-px bg-black" />
+              <div className="absolute bottom-0 left-0 w-full h-px bg-ink" />
             )}
           </Link>
           <Link href="/contact" className={getLinkStyling("/contact")}>
             Contact
             {pathname === "/contact" && (
-              <div className="absolute bottom-0 left-0 w-full h-px bg-black" />
+              <div className="absolute bottom-0 left-0 w-full h-px bg-ink" />
             )}
           </Link>
         </nav>
 
         {/* Hamburger Menu Button (visible only on mobile) */}
         <button
-          className="hidden max-sm:flex items-center p-2 text-gray-600"
+          className="hidden max-sm:flex items-center p-2 text-muted"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -96,7 +97,7 @@ const Navbar = () => {
 
         {/* Mobile Dropdown Menu */}
         <div
-          className={`absolute top-20 right-0 w-40 bg-white border border-gray-100 rounded-bl-md shadow-md transition-all duration-300 z-20 ${
+          className={`absolute top-20 right-0 w-40 bg-card border border-line rounded-bl-md shadow-md transition-all duration-300 z-20 ${
             isMenuOpen
               ? "max-h-80 opacity-100"
               : "max-h-0 opacity-0 pointer-events-none overflow-hidden"
@@ -111,9 +112,9 @@ const Navbar = () => {
               )} text-right mb-1.5 relative group`}
             >
               <span className="relative inline-block">
-                Home
+                About Me
                 {pathname === "/" && (
-                  <div className="absolute -bottom-1.5 -left-1 right-0 h-px bg-black" />
+                  <div className="absolute -bottom-1.5 -left-1 right-0 h-px bg-ink" />
                 )}
               </span>
             </Link>
@@ -127,7 +128,7 @@ const Navbar = () => {
               <span className="relative inline-block">
                 Portfolio
                 {pathname === "/portfolio" && (
-                  <div className="absolute -bottom-1.5 -left-1 right-0 h-px bg-black" />
+                  <div className="absolute -bottom-1.5 -left-1 right-0 h-px bg-ink" />
                 )}
               </span>
             </Link>
@@ -141,7 +142,7 @@ const Navbar = () => {
               <span className="relative inline-block">
                 Resume
                 {pathname === "/resume" && (
-                  <div className="absolute -bottom-1.5 -left-1 right-0 h-px bg-black" />
+                  <div className="absolute -bottom-1.5 -left-1 right-0 h-px bg-ink" />
                 )}
               </span>
             </Link>
@@ -155,7 +156,7 @@ const Navbar = () => {
               <span className="relative inline-block">
                 Contact
                 {pathname === "/contact" && (
-                  <div className="absolute -bottom-1.5 -left-1 right-0 h-px bg-black" />
+                  <div className="absolute -bottom-1.5 -left-1 right-0 h-px bg-ink" />
                 )}
               </span>
             </Link>

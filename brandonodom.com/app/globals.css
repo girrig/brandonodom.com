@@ -4,8 +4,39 @@
   /* --font-urbanist comes from fonts/index.ts, applied to <html> in layout.tsx. */
   --font-sans: var(--font-urbanist), system-ui, sans-serif;
 
+  /* Surfaces, lightest first. Sunken is set into a card. */
+  --color-card: #ffffff;
+  --color-sunken: #f1f3ee;
+  --color-background: #e3edd9;
+
+  /* Borders and divider rules */
+  --color-line: #cdd8c0;
+
+  /* Text, darkest first. Headings, body, secondary, icons */
+  --color-ink: #1d211c;
+  --color-ink-soft: #333a30;
+  --color-muted: #60655f;
+  --color-muted-soft: #6e736b;
+
+  /* Buttons and the wordmark */
+  --color-primary: #1d211c;
+  --color-primary-hover: #333a30;
+
+  /* Links in text */
+  --color-link: #0047ab;
+  --color-link-hover: #1e6fd9;
+
   /* Third-party brand colors */
   --color-gmail: #ea4335;
   --color-linkedin: #0a66c2;
   --color-github: #6e5494;
+}
+
+/* Diagonal pattern behind the whole page, navbar and footer included. */
+.page-texture {
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--color-line) 0 1px,
+    transparent 1px 14px
+  );
 }

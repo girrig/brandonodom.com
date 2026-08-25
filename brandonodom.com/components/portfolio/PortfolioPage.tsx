@@ -7,7 +7,7 @@ const PortfolioPage = () => {
       <div className="w-full pt-8 pb-5">
         <div className="max-w-6xl mx-auto px-4 sm:px-12">
           <h1 className="text-2xl sm:text-3xl font-normal mb-3">Portfolio</h1>
-          <div className="h-px w-16 bg-gray-300"></div>
+          <div className="h-px w-16 bg-line"></div>
         </div>
       </div>
 
@@ -15,10 +15,10 @@ const PortfolioPage = () => {
       <div className="flex-1 pb-6 sm:pb-8 overflow-y-auto">
         <div className="max-w-6xl mx-auto px-4 sm:px-12 space-y-6 sm:space-y-8">
           {/* CodeStar and CodeCatalyst - Image on Left */}
-          <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6">
+          <div className="bg-card/80 border border-line rounded-lg shadow-lg p-4 sm:p-6">
             <div className="flex flex-col md:flex-row">
-              <div className="w-full md:w-1/2 md:pr-8 mb-5 md:mb-0">
-                <div className="relative overflow-hidden rounded-sm flex items-center justify-center">
+              <div className="w-full md:w-1/2 md:pr-8 mb-5 md:mb-0 flex items-center">
+                <div className="relative w-full overflow-hidden rounded-sm flex items-center justify-center">
                   <Image
                     src="/portfolio/CodeStarCodeCatalyst.png"
                     alt="CodeStar and CodeCatalyst logos"
@@ -32,16 +32,16 @@ const PortfolioPage = () => {
                 <h3 className="text-xl font-medium mb-2">
                   CodeStar and CodeCatalyst
                 </h3>
-                <div className="text-xs tracking-wider uppercase text-gray-500 mb-3 sm:mb-4">
+                <div className="text-xs tracking-wider uppercase text-muted-soft mb-3 sm:mb-4">
                   Java / CloudFormation / Templates
                 </div>
-                <p className="text-sm text-gray-600 mb-3 sm:mb-4">
+                <p className="text-sm text-ink-soft mb-3 sm:mb-4">
                   Amazon CodeCatalyst (previously CodeStar) is a unified
                   software development service that enables teams to quickly
                   build and deliver scalable applications on AWS, powered by the
                   AWS Code Suite.
                 </p>
-                <ul className="list-disc text-sm text-gray-600 space-y-1 ml-4 mb-3 sm:mb-4">
+                <ul className="list-disc text-sm text-ink-soft space-y-1 ml-4 mb-3 sm:mb-4">
                   <li>
                     Bootstraps new projects from 40+ ready-to-use templates
                     spanning multiple languages and frameworks
@@ -68,10 +68,10 @@ const PortfolioPage = () => {
           </div>
 
           {/* Therabot - Image on Right */}
-          <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6">
+          <div className="bg-card/80 border border-line rounded-lg shadow-lg p-4 sm:p-6">
             <div className="flex flex-col md:flex-row-reverse">
-              <div className="w-full md:w-1/2 md:pl-8 mb-5 md:mb-0">
-                <div className="relative overflow-hidden rounded-sm flex items-center justify-center">
+              <div className="w-full md:w-1/2 md:pl-8 mb-5 md:mb-0 flex items-center">
+                <div className="relative w-full overflow-hidden rounded-sm flex items-center justify-center">
                   <Image
                     src="/portfolio/therabot.png"
                     alt="Therabot logo with a cartoon robotic dog"
@@ -83,16 +83,16 @@ const PortfolioPage = () => {
               </div>
               <div className="w-full md:w-1/2">
                 <h3 className="text-xl font-medium mb-2">Therabot</h3>
-                <div className="text-xs tracking-wider uppercase text-gray-500 mb-3 sm:mb-4">
+                <div className="text-xs tracking-wider uppercase text-muted-soft mb-3 sm:mb-4">
                   JavaScript / Three.js / UIkit / Autodesk Maya / Robotics
                 </div>
-                <p className="text-sm text-gray-600 mb-3 sm:mb-4">
+                <p className="text-sm text-ink-soft mb-3 sm:mb-4">
                   Therabot is a robotic dog and support companion developed at
                   Mississippi State&apos;s STaRS Lab, used in therapy with
                   children &mdash; including those on the autism spectrum and
                   others in trauma-informed care.
                 </p>
-                <ul className="list-disc text-sm text-gray-600 space-y-1 ml-4 mb-3 sm:mb-4">
+                <ul className="list-disc text-sm text-ink-soft space-y-1 ml-4 mb-3 sm:mb-4">
                   <li>
                     Senses and responds to touch with the lifelike awareness of
                     a real dog
@@ -119,10 +119,10 @@ const PortfolioPage = () => {
           </div>
 
           {/* ANVEL-ROS - Image on Left */}
-          <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6">
+          <div className="bg-card/80 border border-line rounded-lg shadow-lg p-4 sm:p-6">
             <div className="flex flex-col md:flex-row">
-              <div className="w-full md:w-1/2 md:pr-8 mb-5 md:mb-0">
-                <div className="relative overflow-hidden rounded-sm flex items-center justify-center">
+              <div className="w-full md:w-1/2 md:pr-8 mb-5 md:mb-0 flex items-center">
+                <div className="relative w-full overflow-hidden rounded-sm flex items-center justify-center">
                   <Image
                     src="/portfolio/ANVELROS.png"
                     alt="ANVEL-ROS bridge architecture diagram"
@@ -134,10 +134,10 @@ const PortfolioPage = () => {
               </div>
               <div className="w-full md:w-1/2">
                 <h3 className="text-xl font-medium mb-2">ANVEL-ROS</h3>
-                <div className="text-xs tracking-wider uppercase text-gray-500 mb-3 sm:mb-4">
+                <div className="text-xs tracking-wider uppercase text-muted-soft mb-3 sm:mb-4">
                   Python / C++ / ANVEL / ROS / Robotics
                 </div>
-                <p className="text-sm text-gray-600 mb-3 sm:mb-4">
+                <p className="text-sm text-ink-soft mb-3 sm:mb-4">
                   The ANVEL-ROS bridge is software developed at Mississippi
                   State&apos;s Center for Advanced Vehicular Systems. It
                   connects the Autonomous Navigation Virtual Environment
@@ -145,7 +145,7 @@ const PortfolioPage = () => {
                   (ROS), letting robots and their digital twins share commands
                   and sensor data in real time.
                 </p>
-                <ul className="list-disc text-sm text-gray-600 space-y-1 ml-4 mb-3 sm:mb-4">
+                <ul className="list-disc text-sm text-ink-soft space-y-1 ml-4 mb-3 sm:mb-4">
                   <li>
                     Validates simulator accuracy by running identical commands
                     on physical robots and their virtual counterparts
@@ -173,10 +173,10 @@ const PortfolioPage = () => {
           </div>
 
           {/* Llama Game - Image on Right */}
-          <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6">
+          <div className="bg-card/80 border border-line rounded-lg shadow-lg p-4 sm:p-6">
             <div className="flex flex-col md:flex-row-reverse">
-              <div className="w-full md:w-1/2 md:pl-8 mb-5 md:mb-0">
-                <div className="relative overflow-hidden rounded-sm flex items-center justify-center">
+              <div className="w-full md:w-1/2 md:pl-8 mb-5 md:mb-0 flex items-center">
+                <div className="relative w-full overflow-hidden rounded-sm flex items-center justify-center">
                   <Image
                     src="/portfolio/llamagame.png"
                     alt="Llama Game screenshot of a pixel-art field with trees, a llama, and a tiger"
@@ -188,10 +188,10 @@ const PortfolioPage = () => {
               </div>
               <div className="w-full md:w-1/2">
                 <h3 className="text-xl font-medium mb-2">Llama Game</h3>
-                <div className="text-xs tracking-wider uppercase text-gray-500 mb-3 sm:mb-4">
+                <div className="text-xs tracking-wider uppercase text-muted-soft mb-3 sm:mb-4">
                   Python / Pygame
                 </div>
-                <p className="text-sm text-gray-600 mb-3 sm:mb-4">
+                <p className="text-sm text-ink-soft mb-3 sm:mb-4">
                   Llama Game started in 2012 as a summer side project, a way to
                   keep coding when classes weren&apos;t requiring it. The
                   original idea was an open-world sim with emergent gameplay;
@@ -201,7 +201,7 @@ const PortfolioPage = () => {
                     href="https://twitter.com/RickDolphen"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-blue-500 transition-colors"
+                    className="text-link hover:text-link-hover transition-colors"
                   >
                     Rick Dolphen
                   </a>
@@ -213,10 +213,10 @@ const PortfolioPage = () => {
           </div>
 
           {/* Houses of Cards - Image on Left */}
-          <div className="bg-white rounded-lg shadow-lg p-4 sm:p-6">
+          <div className="bg-card/80 border border-line rounded-lg shadow-lg p-4 sm:p-6">
             <div className="flex flex-col md:flex-row">
-              <div className="w-full md:w-1/2 md:pr-8 mb-5 md:mb-0">
-                <div className="relative overflow-hidden rounded-sm flex items-center justify-center">
+              <div className="w-full md:w-1/2 md:pr-8 mb-5 md:mb-0 flex items-center">
+                <div className="relative w-full overflow-hidden rounded-sm flex items-center justify-center">
                   <Image
                     src="/portfolio/housesofcards.png"
                     alt="Queen of Hearts playing card"
@@ -228,16 +228,16 @@ const PortfolioPage = () => {
               </div>
               <div className="w-full md:w-1/2">
                 <h3 className="text-xl font-medium mb-2">Houses of Cards</h3>
-                <div className="text-xs tracking-wider uppercase text-gray-500 mb-3 sm:mb-4">
+                <div className="text-xs tracking-wider uppercase text-muted-soft mb-3 sm:mb-4">
                   JavaScript / Socket.IO
                 </div>
-                <p className="text-sm text-gray-600 mb-3 sm:mb-4">
+                <p className="text-sm text-ink-soft mb-3 sm:mb-4">
                   Houses of Cards is a tabletop card game designed by{" "}
                   <a
                     href="https://twitter.com/RazgrizTwo"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:text-blue-500 transition-colors"
+                    className="text-link hover:text-link-hover transition-colors"
                   >
                     Alec Szczechowski
                   </a>

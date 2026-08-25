@@ -16,7 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={urbanist.variable}>
       <body className={"font-sans antialiased"}>
-        <div className="min-h-screen flex flex-col bg-white">{children}</div>
+        <div className="page-texture min-h-screen flex flex-col bg-background text-ink">
+          {children}
+        </div>
       </body>
     </html>
   );

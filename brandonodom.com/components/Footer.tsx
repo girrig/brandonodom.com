@@ -2,11 +2,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-white border-t border-gray-100 py-6">
-      <div className="max-w-6xl mx-auto px-4 sm:px-12 flex flex-wrap justify-center items-center gap-4">
-        <p className="text-sm text-gray-500">
-          &copy; {currentYear} Brandon Odom
-        </p>
+    <footer>
+      <div className="max-w-6xl mx-auto px-4 sm:px-12 py-6 flex flex-wrap justify-center items-center gap-4 border-t border-line">
+        <p className="text-sm text-muted">&copy; {currentYear} Brandon Odom</p>
         <a
           href="https://github.com/girrig/brandonodom.com"
           target="_blank"

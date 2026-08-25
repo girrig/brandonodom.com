@@ -7,7 +7,7 @@ export default function Layout({
   return (
     <>
       <Navbar />
-      <main className="flex-1 bg-gray-50">{children}</main>
+      <main className="flex-1">{children}</main>
       <Footer />
     </>
   );

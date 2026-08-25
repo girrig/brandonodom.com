@@ -9,11 +9,9 @@ import { useActionState, useEffect, useRef } from "react";
 
 const initialState: ContactState = { status: "idle" };
 
-// TODO: white fields on a white card leaves the border doing all the work.
-// Revisit with the color pass, when an off-white surface is available.
 const inputClass =
-  "w-full px-3 pt-5 pb-2 text-sm bg-white border border-gray-400 rounded-md shadow-xs focus:border-gray-600 focus:ring-1 focus:ring-gray-600 focus:outline-hidden transition-all";
-const labelClass = "absolute text-xs text-gray-500 left-3 top-1";
+  "w-full px-3 pt-5 pb-2 text-sm bg-sunken border border-line rounded-md shadow-xs hover:border-muted-soft focus:border-link focus:ring-1 focus:ring-link focus:outline-hidden transition-colors duration-75 ease-out";
+const labelClass = "absolute text-xs text-muted left-3 top-1";
 
 const ContactForm = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -76,16 +74,18 @@ const ContactForm = () => {
         </div>
       </div>
 
-      <button
-        type="submit"
-        disabled={isPending}
-        className="px-4 py-2 bg-black text-white text-sm hover:bg-gray-800 transition-colors inline-flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
-      >
-        <Send className="w-4 h-4" />
-        {isPending ? "Sending..." : "Send Message"}
-      </button>
+      <div className="flex justify-center">
+        <button
+          type="submit"
+          disabled={isPending}
+          className="px-7 py-3 rounded-full bg-primary text-white text-sm shadow-md transition-all inline-flex items-center gap-2.5 enabled:hover:bg-primary-hover enabled:hover:shadow-lg enabled:hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          <Send className="w-4 h-4 shrink-0" />
+          {isPending ? "Sending..." : "Send Message"}
+        </button>
+      </div>
 
-      <div aria-live="polite">
+      <div aria-live="polite" className="text-center">
         {state.status === "success" && (
           <p className="mt-3 text-xs text-green-600">{state.message}</p>
         )}
