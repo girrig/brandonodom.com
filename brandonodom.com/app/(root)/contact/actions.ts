@@ -5,10 +5,15 @@ import nodemailer from "nodemailer";
 export type ContactState = {
   status: "idle" | "success" | "error";
   message?: string;
+  // Echoed back on failure so a visitor doesn't retype everything to fix
+  // one field. Absent on success, which lets the form clear itself.
+  values?: { name: string; email: string; message: string };
 };
 
-// Basic email shape check: text@text.text
-const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+// The WHATWG HTML spec's own regex for input type=email, with the final
+// repetition changed from * to + so a dotted domain is required.
+const EMAIL_PATTERN =
+  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+$/;
 
 // Strip CR/LF and trim so input can't inject extra email headers
 function sanitizeHeaderField(s: string): string {
@@ -23,14 +28,24 @@ export async function sendContactMessage(
   const email = sanitizeHeaderField((formData.get("email") as string) ?? "");
   const message = ((formData.get("message") as string) ?? "").trim();
 
+  const values = { name, email, message };
+
   if (!name || !email || !message) {
-    return { status: "error", message: "Please fill in all fields." };
+    return { status: "error", message: "Please fill in all fields.", values };
   }
   if (!EMAIL_PATTERN.test(email)) {
-    return { status: "error", message: "Please enter a valid email address." };
+    return {
+      status: "error",
+      message: "Please enter a valid email address.",
+      values,
+    };
   }
   if (name.length > 100 || email.length > 200 || message.length > 5000) {
-    return { status: "error", message: "One or more fields are too long." };
+    return {
+      status: "error",
+      message: "One or more fields are too long.",
+      values,
+    };
   }
 
   const user = process.env.GMAIL_USER;
@@ -44,6 +59,7 @@ export async function sendContactMessage(
     return {
       status: "error",
       message: "Sorry, the contact form isn't available right now.",
+      values,
     };
   }
 
@@ -68,11 +84,12 @@ export async function sendContactMessage(
       status: "error",
       message:
         "Sorry, something went wrong sending your message. Please email me directly.",
+      values,
     };
   }
 
   return {
     status: "success",
-    message: "Thanks! Your message has been sent - I'll get back to you soon.",
+    message: "Your message has been sent.",
   };
 }

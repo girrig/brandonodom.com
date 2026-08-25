@@ -29,8 +29,10 @@ const ContactForm = () => {
     }
   }, [state.status]);
 
+  // noValidate hands every failure to the server so errors all surface in the
+  // same styled message rather than a native browser bubble
   return (
-    <form ref={formRef} action={formAction}>
+    <form ref={formRef} action={formAction} noValidate>
       <div className="space-y-3 mb-6">
         <div className="relative">
           <label htmlFor="name" className={labelClass}>
@@ -43,6 +45,7 @@ const ContactForm = () => {
             type="text"
             required
             maxLength={100}
+            defaultValue={state.values?.name ?? ""}
             className={inputClass}
           />
         </div>
@@ -56,6 +59,7 @@ const ContactForm = () => {
             type="email"
             required
             maxLength={200}
+            defaultValue={state.values?.email ?? ""}
             className={inputClass}
           />
         </div>
@@ -69,6 +73,7 @@ const ContactForm = () => {
             required
             maxLength={5000}
             rows={4}
+            defaultValue={state.values?.message ?? ""}
             className={inputClass}
           />
         </div>
