@@ -1,3 +1,4 @@
+import LinkButton from "@/components/portfolio/LinkButton";
 import Image from "next/image";
 
 const PortfolioPage = () => {
@@ -55,14 +56,10 @@ const PortfolioPage = () => {
                     blueprints, team collaboration, and deeper AWS integration
                   </li>
                 </ul>
-                <a
+                <LinkButton
                   href="https://aws.amazon.com/codecatalyst/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm font-medium hover:underline"
-                >
-                  View Website →
-                </a>
+                  label="View Website"
+                />
               </div>
             </div>
           </div>
@@ -106,14 +103,10 @@ const PortfolioPage = () => {
                     ACM/IEEE HRI conference
                   </li>
                 </ul>
-                <a
+                <LinkButton
                   href="https://mytherabot.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm font-medium hover:underline"
-                >
-                  View Website →
-                </a>
+                  label="View Website"
+                />
               </div>
             </div>
           </div>
@@ -160,14 +153,10 @@ const PortfolioPage = () => {
                     Vehicle Systems Engineering and Technology Symposium
                   </li>
                 </ul>
-                <a
+                <LinkButton
                   href="https://www.semanticscholar.org/paper/ANVEL-ROS%3A-THE-INTEGRATION-OF-THE-ROBOT-OPERATING-A-Hudson-Lalejini/1f40c34a0c6a8fac74c8ac462b4132c1e820070b"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm font-medium hover:underline"
-                >
-                  View Paper →
-                </a>
+                  label="View Paper"
+                />
               </div>
             </div>
           </div>

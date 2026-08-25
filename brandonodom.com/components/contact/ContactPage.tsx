@@ -1,6 +1,5 @@
-import { Mail } from "lucide-react";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa6";
 import ContactForm from "./ContactForm";
+import ContactLinks from "./ContactLinks";
 
 const ContactPage = () => {
   return (
@@ -21,63 +20,7 @@ const ContactPage = () => {
           <div className="max-w-3xl mx-auto bg-card/80 border border-line rounded-lg shadow-lg p-4 sm:p-6 flex flex-col md:flex-row gap-8 md:gap-12">
             <div className="md:shrink-0">
               <h2 className="text-xl font-normal mb-4">Find Me</h2>
-              {/* One row per channel, same shape, brand color on hover. */}
-              <div className="flex flex-col space-y-3">
-                {/* Email */}
-                <a
-                  href="mailto:brandon.david.odom@gmail.com"
-                  className="flex items-center group"
-                >
-                  <div className="w-9 h-9 rounded-full bg-sunken border border-line flex items-center justify-center text-ink group-hover:border-gmail group-hover:text-gmail transition-all transform group-hover:scale-110 mr-3">
-                    <Mail className="w-4 h-4" />
-                  </div>
-                  <span className="text-sm text-ink-soft group-hover:text-gmail transition-colors">
-                    brandon.david.odom@gmail.com
-                  </span>
-                </a>
-                {/* LinkedIn */}
-                <a
-                  href="https://www.linkedin.com/in/brandonodom/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center group"
-                >
-                  <div className="w-9 h-9 rounded-full bg-sunken border border-line flex items-center justify-center text-ink group-hover:border-linkedin group-hover:text-linkedin transition-all transform group-hover:scale-110 mr-3">
-                    <FaLinkedinIn className="w-4 h-4" />
-                  </div>
-                  <span className="text-sm text-ink-soft group-hover:text-linkedin transition-colors">
-                    Brandon Odom
-                  </span>
-                </a>
-                {/* Professional GitHub */}
-                <a
-                  href="https://github.com/brandonodom"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center group"
-                >
-                  <div className="w-9 h-9 rounded-full bg-sunken border border-line flex items-center justify-center text-ink group-hover:border-github group-hover:text-github transition-all transform group-hover:scale-110 mr-3">
-                    <FaGithub className="w-4 h-4" />
-                  </div>
-                  <span className="text-sm text-ink-soft group-hover:text-github transition-colors">
-                    brandonodom (Professional)
-                  </span>
-                </a>
-                {/* Personal GitHub */}
-                <a
-                  href="https://github.com/girrig"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center group"
-                >
-                  <div className="w-9 h-9 rounded-full bg-sunken border border-line flex items-center justify-center text-ink group-hover:border-github group-hover:text-github transition-all transform group-hover:scale-110 mr-3">
-                    <FaGithub className="w-4 h-4" />
-                  </div>
-                  <span className="text-sm text-ink-soft group-hover:text-github transition-colors">
-                    girrig (Personal)
-                  </span>
-                </a>
-              </div>
+              <ContactLinks />
             </div>
 
             <div className="md:flex-1">

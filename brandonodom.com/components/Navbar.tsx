@@ -1,14 +1,18 @@
 "use client";
 
 import { caveat } from "@/fonts";
-import { Menu, X } from "lucide-react";
+import type { IconHandle } from "@animateicons/react";
+import { MenuIcon, XIcon } from "@animateicons/react/lucide";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Navbar = () => {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  // The hamburger only exists on mobile, where there is no hover, so the
+  // animation is driven by a tap instead
+  const menuIconRef = useRef<IconHandle>(null);
 
   // Close mobile menu when we switch pages
   useEffect(() => {
@@ -85,13 +89,16 @@ const Navbar = () => {
         {/* Hamburger Menu Button (visible only on mobile) */}
         <button
           className="hidden max-sm:flex items-center p-2 text-muted"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          onClick={() => {
+            setIsMenuOpen(!isMenuOpen);
+            menuIconRef.current?.startAnimation();
+          }}
           aria-label="Toggle menu"
         >
           {isMenuOpen ? (
-            <X className="w-6 h-6" />
+            <XIcon ref={menuIconRef} size={24} />
           ) : (
-            <Menu className="w-6 h-6" />
+            <MenuIcon ref={menuIconRef} size={24} />
           )}
         </button>
 

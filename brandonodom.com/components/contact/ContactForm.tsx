@@ -4,7 +4,7 @@ import {
   sendContactMessage,
   type ContactState,
 } from "@/app/(root)/contact/actions";
-import { Send } from "lucide-react";
+import { SendIcon, type SendIconHandle } from "@animateicons/react/lucide";
 import { useActionState, useEffect, useRef } from "react";
 
 const initialState: ContactState = { status: "idle" };
@@ -16,6 +16,10 @@ const labelClass = "absolute text-xs text-muted left-3 top-1";
 const ContactForm = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const nameRef = useRef<HTMLInputElement>(null);
+
+  // Attaching the ref hands hover control to the button, so the plane reacts
+  // to the whole button rather than only to the icon itself
+  const sendIconRef = useRef<SendIconHandle>(null);
   const [state, formAction, isPending] = useActionState(
     sendContactMessage,
     initialState,
@@ -83,9 +87,11 @@ const ContactForm = () => {
         <button
           type="submit"
           disabled={isPending}
+          onMouseEnter={() => sendIconRef.current?.startAnimation()}
+          onMouseLeave={() => sendIconRef.current?.stopAnimation()}
           className="px-7 py-3 rounded-full bg-primary text-white text-sm shadow-md transition-all inline-flex items-center gap-2.5 enabled:hover:bg-primary-hover enabled:hover:shadow-lg enabled:hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          <Send className="w-4 h-4 shrink-0" />
+          <SendIcon ref={sendIconRef} size={18} className="shrink-0" />
           {isPending ? "Sending..." : "Send Message"}
         </button>
       </div>
