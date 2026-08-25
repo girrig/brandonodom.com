@@ -4,13 +4,12 @@ import ContactLinks from "./ContactLinks";
 const ContactPage = () => {
   return (
     <div className="flex flex-col">
-      {/* Centered rather than left-aligned like the other pages */}
-      <div className="w-full pt-8 pb-5">
-        <div className="max-w-6xl mx-auto px-4 sm:px-12">
-          <h1 className="text-2xl sm:text-3xl font-normal mb-3 text-center">
-            Contact Me
-          </h1>
-          <div className="h-px w-16 bg-line mx-auto"></div>
+      {/* w-full because mx-auto on a flex child drops the stretch and collapses it */}
+      <div className="max-w-6xl w-full mx-auto px-4 sm:px-12">
+        {/* Matches the card's width so the heading sits on its left edge */}
+        <div className="max-w-3xl mx-auto pt-8 pb-5">
+          <h1 className="text-2xl sm:text-3xl font-normal mb-3">Contact Me</h1>
+          <div className="h-px w-16 bg-line"></div>
         </div>
       </div>
 

@@ -5,11 +5,9 @@ const PortfolioPage = () => {
   return (
     <div className="flex flex-col">
       {/* Padding inside max-w-6xl so the left edge matches the navbar. */}
-      <div className="w-full pt-8 pb-5">
-        <div className="max-w-6xl mx-auto px-4 sm:px-12">
-          <h1 className="text-2xl sm:text-3xl font-normal mb-3">Portfolio</h1>
-          <div className="h-px w-16 bg-line"></div>
-        </div>
+      <div className="max-w-6xl w-full mx-auto px-4 sm:px-12 pt-8 pb-5">
+        <h1 className="text-2xl sm:text-3xl font-normal mb-3">Portfolio</h1>
+        <div className="h-px w-16 bg-line"></div>
       </div>
 
       {/* Projects Panel */}
