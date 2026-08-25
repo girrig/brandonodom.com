@@ -1,5 +1,7 @@
 import { Globe, Mail, MapPin, Phone } from "lucide-react";
 
+// Black and white only. This lives on the site but is not part of it, and it
+// also renders /resume-print, the source for the downloadable PDF.
 const ResumeContent = () => {
   return (
     <>
@@ -7,16 +9,16 @@ const ResumeContent = () => {
       <div className="mb-12">
         <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between sm:gap-10">
           <div>
-            <h1 className="text-4xl font-medium tracking-tight text-gray-900 mb-1">
+            <h1 className="text-4xl font-medium tracking-tight text-black mb-1">
               Brandon Odom
             </h1>
-            <h2 className="text-xl text-gray-600">Software Engineer</h2>
+            <h2 className="text-xl text-neutral-600">Software Engineer</h2>
           </div>
 
           {/* Contact details */}
-          <div className="shrink-0 space-y-1 text-sm text-gray-800">
+          <div className="shrink-0 space-y-1 text-sm text-neutral-800">
             <div className="flex items-center">
-              <Mail className="w-4 h-4 mr-2 shrink-0 text-gray-500" />
+              <Mail className="w-4 h-4 mr-2 shrink-0 text-neutral-500" />
               <a
                 href="mailto:brandon.david.odom@gmail.com"
                 className="text-inherit no-underline"
@@ -25,7 +27,7 @@ const ResumeContent = () => {
               </a>
             </div>
             <div className="flex items-center">
-              <Globe className="w-4 h-4 mr-2 shrink-0 text-gray-500" />
+              <Globe className="w-4 h-4 mr-2 shrink-0 text-neutral-500" />
               <a
                 href="https://brandonodom.com"
                 className="text-inherit no-underline"
@@ -34,11 +36,11 @@ const ResumeContent = () => {
               </a>
             </div>
             <div className="flex items-center">
-              <Phone className="w-4 h-4 mr-2 shrink-0 text-gray-500" />
+              <Phone className="w-4 h-4 mr-2 shrink-0 text-neutral-500" />
               (228) 493-6366
             </div>
             <div className="flex items-center">
-              <MapPin className="w-4 h-4 mr-2 shrink-0 text-gray-500" />
+              <MapPin className="w-4 h-4 mr-2 shrink-0 text-neutral-500" />
               Austin, Texas
             </div>
           </div>
@@ -47,25 +49,25 @@ const ResumeContent = () => {
 
       {/* Experience Section */}
       <div className="mb-8">
-        <h3 className="text-base font-bold uppercase tracking-[0.15em] mb-3 text-gray-900 border-b border-gray-300 pb-2 break-after-avoid">
+        <h3 className="text-base font-bold uppercase tracking-[0.15em] mb-3 text-black border-b border-neutral-300 pb-2 break-after-avoid">
           Professional Experience
         </h3>
 
         <div className="mb-5">
           <div className="break-inside-avoid">
             <div className="flex justify-between items-baseline mb-1 break-after-avoid">
-              <h4 className="text-lg font-semibold text-gray-900">
+              <h4 className="text-lg font-semibold text-black">
                 Fullstack Software Engineer
               </h4>
-              <span className="text-sm text-gray-800 tabular-nums">
+              <span className="text-sm text-neutral-800 tabular-nums">
                 Nov 2024 - Present
               </span>
             </div>
-            <div className="text-sm font-medium text-gray-900 mb-2 break-after-avoid">
+            <div className="text-sm font-medium text-black mb-2 break-after-avoid">
               Freelance
             </div>
           </div>
-          <ul className="text-sm text-gray-800 space-y-1 pl-4 list-disc leading-normal">
+          <ul className="text-sm text-neutral-800 space-y-1 pl-4 list-disc leading-normal">
             <li>
               Leading the end-to-end website redesign for a B2B industrial metal
               products company as the sole engineer and designer, replacing an
@@ -93,18 +95,16 @@ const ResumeContent = () => {
         <div className="mb-5">
           <div className="break-inside-avoid">
             <div className="flex justify-between items-baseline mb-1 break-after-avoid">
-              <h4 className="text-lg font-semibold text-gray-900">
-                Career Break
-              </h4>
-              <span className="text-sm text-gray-800 tabular-nums">
+              <h4 className="text-lg font-semibold text-black">Career Break</h4>
+              <span className="text-sm text-neutral-800 tabular-nums">
                 Jul 2022 - Nov 2024
               </span>
             </div>
-            <div className="text-sm font-medium text-gray-900 mb-2 break-after-avoid">
+            <div className="text-sm font-medium text-black mb-2 break-after-avoid">
               Family Caregiving
             </div>
           </div>
-          <ul className="text-sm text-gray-800 space-y-1 pl-4 list-disc leading-normal">
+          <ul className="text-sm text-neutral-800 space-y-1 pl-4 list-disc leading-normal">
             <li>
               Relocated home to provide care for an aging family member during a
               period of medical need; returned to software engineering in 2024
@@ -115,18 +115,18 @@ const ResumeContent = () => {
         <div className="mb-5">
           <div className="break-inside-avoid">
             <div className="flex justify-between items-baseline mb-1 break-after-avoid">
-              <h4 className="text-lg font-semibold text-gray-900">
+              <h4 className="text-lg font-semibold text-black">
                 Software Development Engineer
               </h4>
-              <span className="text-sm text-gray-800 tabular-nums">
+              <span className="text-sm text-neutral-800 tabular-nums">
                 Sept 2019 - Jul 2022
               </span>
             </div>
-            <div className="text-sm font-medium text-gray-900 mb-2 break-after-avoid">
+            <div className="text-sm font-medium text-black mb-2 break-after-avoid">
               Amazon Web Services
             </div>
           </div>
-          <ul className="text-sm text-gray-800 space-y-1 pl-4 list-disc leading-normal">
+          <ul className="text-sm text-neutral-800 space-y-1 pl-4 list-disc leading-normal">
             <li>
               Became AWS CodeStar&apos;s primary engineer in just five months,
               maintaining the live service through patches and version upgrades
@@ -158,26 +158,26 @@ const ResumeContent = () => {
         <div className="mb-5">
           <div className="break-inside-avoid">
             <div className="flex justify-between items-baseline break-after-avoid">
-              <h4 className="text-lg font-semibold text-gray-900">
+              <h4 className="text-lg font-semibold text-black">
                 Graduate Research Assistant
               </h4>
-              <span className="text-sm text-gray-800 tabular-nums">
+              <span className="text-sm text-neutral-800 tabular-nums">
                 Jan 2016 - Dec 2017
               </span>
             </div>
             <div className="flex justify-between items-baseline mb-1 break-after-avoid">
-              <h4 className="text-lg font-semibold text-gray-900">
+              <h4 className="text-lg font-semibold text-black">
                 Student Worker
               </h4>
-              <span className="text-sm text-gray-800 tabular-nums">
+              <span className="text-sm text-neutral-800 tabular-nums">
                 May 2014 - Dec 2015
               </span>
             </div>
-            <div className="text-sm font-medium text-gray-900 mb-2 break-after-avoid">
+            <div className="text-sm font-medium text-black mb-2 break-after-avoid">
               Center for Advanced Vehicular Systems
             </div>
           </div>
-          <ul className="text-sm text-gray-800 space-y-1 pl-4 list-disc leading-normal">
+          <ul className="text-sm text-neutral-800 space-y-1 pl-4 list-disc leading-normal">
             <li>
               Built the ANVEL-ROS bridge, exchanging video, sensor data, and
               control commands between the ROS framework and the ANVEL simulator
@@ -198,16 +198,16 @@ const ResumeContent = () => {
         <div className="mb-5">
           <div className="break-inside-avoid">
             <div className="flex justify-between items-baseline break-after-avoid">
-              <h4 className="text-lg font-semibold text-gray-900">IT Intern</h4>
-              <span className="text-sm text-gray-800 tabular-nums">
+              <h4 className="text-lg font-semibold text-black">IT Intern</h4>
+              <span className="text-sm text-neutral-800 tabular-nums">
                 May 2012 - Jul 2012; May 2013 - Jul 2013
               </span>
             </div>
-            <div className="text-sm font-medium text-gray-900 mb-2 break-after-avoid">
+            <div className="text-sm font-medium text-black mb-2 break-after-avoid">
               St. Stanislaus College
             </div>
           </div>
-          <ul className="text-sm text-gray-800 space-y-1 pl-4 list-disc leading-normal">
+          <ul className="text-sm text-neutral-800 space-y-1 pl-4 list-disc leading-normal">
             <li>
               Set up a computer lab from scratch, cloning drives and
               standardizing configurations across every machine
@@ -226,140 +226,140 @@ const ResumeContent = () => {
 
       {/* Skills Section */}
       <div className="mb-8">
-        <h3 className="text-base font-bold uppercase tracking-[0.15em] mb-3 text-gray-900 border-b border-gray-300 pb-2 break-after-avoid">
+        <h3 className="text-base font-bold uppercase tracking-[0.15em] mb-3 text-black border-b border-neutral-300 pb-2 break-after-avoid">
           Skills
         </h3>
 
         <div className="grid sm:grid-cols-2 grid-cols-1 gap-x-8 gap-y-2">
           <div className="mb-3 break-inside-avoid">
-            <h4 className="text-lg font-semibold text-gray-900 mb-2">
+            <h4 className="text-lg font-semibold text-black mb-2">
               Development
             </h4>
             <div className="flex flex-wrap">
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 TypeScript
               </span>
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 JavaScript
               </span>
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 Python
               </span>
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 Java
               </span>
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 C++
               </span>
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 React
               </span>
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 Next.js
               </span>
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 HTML5
               </span>
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 CSS
               </span>
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 Tailwind
               </span>
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 Node.js
               </span>
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 API Development
               </span>
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 E-commerce
               </span>
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 ROS
               </span>
             </div>
           </div>
 
           <div className="mb-3 break-inside-avoid">
-            <h4 className="text-lg font-semibold text-gray-900 mb-2">
+            <h4 className="text-lg font-semibold text-black mb-2">
               Cloud &amp; DevOps
             </h4>
             <div className="flex flex-wrap">
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 AWS
               </span>
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 CloudFormation
               </span>
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 CI/CD
               </span>
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 Docker
               </span>
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 Vercel
               </span>
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 Digital Ocean
               </span>
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 Security
               </span>
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 On-Call
               </span>
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 Agile/Scrum
               </span>
             </div>
           </div>
 
           <div className="mb-3 break-inside-avoid">
-            <h4 className="text-lg font-semibold text-gray-900 mb-2">
+            <h4 className="text-lg font-semibold text-black mb-2">
               Tools &amp; Services
             </h4>
             <div className="flex flex-wrap">
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 LLMs
               </span>
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 Git
               </span>
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 Headless CMS
               </span>
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 Algolia
               </span>
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 VS Code
               </span>
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 IntelliJ IDEA
               </span>
             </div>
           </div>
 
           <div className="mb-3 break-inside-avoid">
-            <h4 className="text-lg font-semibold text-gray-900 mb-2">
+            <h4 className="text-lg font-semibold text-black mb-2">
               Design &amp; Research
             </h4>
             <div className="flex flex-wrap">
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 UI Design
               </span>
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 UX Design
               </span>
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 Prototyping
               </span>
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 User Research
               </span>
-              <span className="px-2 py-1 border border-gray-300 text-gray-900 text-xs rounded-sm mr-2 mb-2">
+              <span className="px-2 py-1 border border-neutral-300 text-black text-xs rounded-sm mr-2 mb-2">
                 Human Factors
               </span>
             </div>
@@ -369,28 +369,28 @@ const ResumeContent = () => {
 
       {/* Education Section */}
       <div className="mb-8">
-        <h3 className="text-base font-bold uppercase tracking-[0.15em] mb-3 text-gray-900 border-b border-gray-300 pb-2 break-after-avoid">
+        <h3 className="text-base font-bold uppercase tracking-[0.15em] mb-3 text-black border-b border-neutral-300 pb-2 break-after-avoid">
           Education
         </h3>
 
         <div className="mb-5">
           <div className="break-inside-avoid">
             <div className="flex justify-between items-baseline mb-1 break-after-avoid">
-              <h4 className="text-lg font-semibold text-gray-900">
+              <h4 className="text-lg font-semibold text-black">
                 MS in Computer Science{" "}
-                <span className="text-sm font-normal text-gray-700 align-baseline">
+                <span className="text-sm font-normal text-neutral-800 align-baseline">
                   · Artificial Intelligence
                 </span>
               </h4>
-              <span className="text-sm text-gray-800 tabular-nums">
+              <span className="text-sm text-neutral-800 tabular-nums">
                 2015 - 2017
               </span>
             </div>
-            <div className="text-sm font-medium text-gray-900 mb-2 break-after-avoid">
+            <div className="text-sm font-medium text-black mb-2 break-after-avoid">
               Mississippi State University
             </div>
           </div>
-          <ul className="text-sm text-gray-800 space-y-1 pl-4 list-disc leading-normal">
+          <ul className="text-sm text-neutral-800 space-y-1 pl-4 list-disc leading-normal">
             <li>
               Master&apos;s Project, &quot;Therabot UI&quot;: designed and built
               a human-friendly interface for Therabot, a robotic therapy dog for
@@ -411,21 +411,21 @@ const ResumeContent = () => {
         <div className="mb-5">
           <div className="break-inside-avoid">
             <div className="flex justify-between items-baseline mb-1 break-after-avoid">
-              <h4 className="text-lg font-semibold text-gray-900">
+              <h4 className="text-lg font-semibold text-black">
                 BS in Computer Science{" "}
-                <span className="text-sm font-normal text-gray-700 align-baseline">
+                <span className="text-sm font-normal text-neutral-800 align-baseline">
                   · Minor in Cognitive Science
                 </span>
               </h4>
-              <span className="text-sm text-gray-800 tabular-nums">
+              <span className="text-sm text-neutral-800 tabular-nums">
                 2011 - 2015
               </span>
             </div>
-            <div className="text-sm font-medium text-gray-900 mb-2 break-after-avoid">
+            <div className="text-sm font-medium text-black mb-2 break-after-avoid">
               Mississippi State University
             </div>
           </div>
-          <ul className="text-sm text-gray-800 space-y-1 pl-4 list-disc leading-normal">
+          <ul className="text-sm text-neutral-800 space-y-1 pl-4 list-disc leading-normal">
             <li>
               Member of the Social, Therapeutic, and Robotic Systems Lab (STaRS
               Lab)
@@ -436,17 +436,17 @@ const ResumeContent = () => {
 
       {/* Publications Section */}
       <div className="mb-8">
-        <h3 className="text-base font-bold uppercase tracking-[0.15em] mb-3 text-gray-900 border-b border-gray-300 pb-2 break-after-avoid">
+        <h3 className="text-base font-bold uppercase tracking-[0.15em] mb-3 text-black border-b border-neutral-300 pb-2 break-after-avoid">
           Publications
         </h3>
 
         <div className="space-y-3">
           <div className="flex justify-between items-baseline break-after-avoid">
             <div>
-              <h4 className="text-lg font-semibold text-gray-900">
+              <h4 className="text-lg font-semibold text-black">
                 &quot;Therabot™: A Robotic Support Companion&quot;
               </h4>
-              <p className="text-sm text-gray-800 leading-relaxed">
+              <p className="text-sm text-neutral-800 leading-relaxed">
                 Darrow, Sarah, Aaron Kimbrell, Nikhil Lokhande, Nicholas
                 Dinep-Schneider, T. J. Ciufo,{" "}
                 <span className="font-semibold">Brandon Odom</span>, Zachary
@@ -455,16 +455,16 @@ const ResumeContent = () => {
                 Conference on Human-Robot Interaction, pp. 37-37. ACM, 2018.
               </p>
             </div>
-            <span className="text-sm text-gray-800 tabular-nums">2018</span>
+            <span className="text-sm text-neutral-800 tabular-nums">2018</span>
           </div>
 
           <div className="flex justify-between items-baseline break-after-avoid">
             <div>
-              <h4 className="text-lg font-semibold text-gray-900">
+              <h4 className="text-lg font-semibold text-black">
                 &quot;ANVEL-ROS: The integration of the robot operating system
                 with a high-fidelity simulator.&quot;
               </h4>
-              <p className="text-sm text-gray-800 leading-relaxed">
+              <p className="text-sm text-neutral-800 leading-relaxed">
                 Hudson, Christopher R., Alexander Lalejini,{" "}
                 <span className="font-semibold">Brandon Odom</span>, Cindy L.
                 Bethel, Daniel W. Carruth, Phillip J. Durst, and Christopher
@@ -474,7 +474,7 @@ const ResumeContent = () => {
                 p. 378. 2015.
               </p>
             </div>
-            <span className="text-sm text-gray-800 tabular-nums">2015</span>
+            <span className="text-sm text-neutral-800 tabular-nums">2015</span>
           </div>
         </div>
       </div>
