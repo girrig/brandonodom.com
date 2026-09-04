@@ -10,7 +10,7 @@ import { useActionState, useEffect, useRef } from "react";
 const initialState: ContactState = { status: "idle" };
 
 const inputClass =
-  "w-full px-3 pt-5 pb-2 text-sm bg-sunken border border-line rounded-md shadow-xs hover:border-muted-soft focus:border-link focus:ring-1 focus:ring-link focus:outline-hidden transition-colors duration-75 ease-out";
+  "w-full px-3 pt-5 pb-2 text-base sm:text-sm bg-sunken border border-line rounded-md shadow-xs hover:border-muted-soft focus:border-link focus:ring-1 focus:ring-link focus:outline-hidden transition-colors duration-75 ease-out";
 const labelClass = "absolute text-xs text-muted left-3 top-1";
 
 const ContactForm = () => {
@@ -89,7 +89,12 @@ const ContactForm = () => {
           disabled={isPending}
           onMouseEnter={() => sendIconRef.current?.startAnimation()}
           onMouseLeave={() => sendIconRef.current?.stopAnimation()}
-          className="px-7 py-3 rounded-full bg-primary text-white text-sm shadow-md transition-all inline-flex items-center gap-2.5 enabled:hover:bg-primary-hover enabled:hover:shadow-lg enabled:hover:-translate-y-0.5 disabled:opacity-50 disabled:cursor-not-allowed"
+          // Touch has no hover, so the press drives the plane there instead
+          onPointerDown={(event) => {
+            if (event.pointerType !== "mouse")
+              sendIconRef.current?.startAnimation();
+          }}
+          className="px-7 py-3 rounded-full bg-primary text-white text-sm shadow-md transition-all inline-flex items-center gap-2.5 enabled:hover:bg-primary-hover enabled:hover:shadow-lg enabled:hover:-translate-y-0.5 enabled:active:bg-primary-hover enabled:active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
         >
           <SendIcon ref={sendIconRef} size={18} className="shrink-0" />
           {isPending ? "Sending..." : "Send Message"}

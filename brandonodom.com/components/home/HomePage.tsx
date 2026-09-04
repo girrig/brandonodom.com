@@ -58,11 +58,13 @@ const HomePage = () => {
               {/* bg only shows if the photo fails to load, since next/image
                   sizes the wrapper to the image exactly */}
               <div className="relative overflow-hidden bg-sunken max-w-xs md:max-w-full mx-auto">
+                {/* priority because this is the page's LCP element */}
                 <Image
                   src="/portrait.png"
                   alt="Brandon Odom outdoors near a waterfall"
                   width={400}
                   height={500}
+                  priority
                   className="w-full h-full object-contain"
                 />
                 <div className="absolute inset-0 border border-white/10"></div>

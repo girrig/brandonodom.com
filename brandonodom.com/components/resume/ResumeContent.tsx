@@ -55,11 +55,11 @@ const ResumeContent = () => {
 
         <div className="mb-5">
           <div className="break-inside-avoid">
-            <div className="flex justify-between items-baseline mb-1 break-after-avoid">
+            <div className="flex flex-wrap justify-between items-baseline gap-x-4 mb-1 break-after-avoid">
               <h4 className="text-lg font-semibold text-black">
                 Fullstack Software Engineer
               </h4>
-              <span className="text-sm text-neutral-800 tabular-nums">
+              <span className="shrink-0 text-sm text-neutral-800 tabular-nums">
                 Nov 2024 - Present
               </span>
             </div>
@@ -94,9 +94,9 @@ const ResumeContent = () => {
 
         <div className="mb-5">
           <div className="break-inside-avoid">
-            <div className="flex justify-between items-baseline mb-1 break-after-avoid">
+            <div className="flex flex-wrap justify-between items-baseline gap-x-4 mb-1 break-after-avoid">
               <h4 className="text-lg font-semibold text-black">Career Break</h4>
-              <span className="text-sm text-neutral-800 tabular-nums">
+              <span className="shrink-0 text-sm text-neutral-800 tabular-nums">
                 Jul 2022 - Nov 2024
               </span>
             </div>
@@ -114,11 +114,11 @@ const ResumeContent = () => {
 
         <div className="mb-5">
           <div className="break-inside-avoid">
-            <div className="flex justify-between items-baseline mb-1 break-after-avoid">
+            <div className="flex flex-wrap justify-between items-baseline gap-x-4 mb-1 break-after-avoid">
               <h4 className="text-lg font-semibold text-black">
                 Software Development Engineer
               </h4>
-              <span className="text-sm text-neutral-800 tabular-nums">
+              <span className="shrink-0 text-sm text-neutral-800 tabular-nums">
                 Sept 2019 - Jul 2022
               </span>
             </div>
@@ -157,19 +157,19 @@ const ResumeContent = () => {
 
         <div className="mb-5">
           <div className="break-inside-avoid">
-            <div className="flex justify-between items-baseline break-after-avoid">
+            <div className="flex flex-wrap justify-between items-baseline gap-x-4 break-after-avoid">
               <h4 className="text-lg font-semibold text-black">
                 Graduate Research Assistant
               </h4>
-              <span className="text-sm text-neutral-800 tabular-nums">
+              <span className="shrink-0 text-sm text-neutral-800 tabular-nums">
                 Jan 2016 - Dec 2017
               </span>
             </div>
-            <div className="flex justify-between items-baseline mb-1 break-after-avoid">
+            <div className="flex flex-wrap justify-between items-baseline gap-x-4 mb-1 break-after-avoid">
               <h4 className="text-lg font-semibold text-black">
                 Student Worker
               </h4>
-              <span className="text-sm text-neutral-800 tabular-nums">
+              <span className="shrink-0 text-sm text-neutral-800 tabular-nums">
                 May 2014 - Dec 2015
               </span>
             </div>
@@ -197,9 +197,9 @@ const ResumeContent = () => {
 
         <div className="mb-5">
           <div className="break-inside-avoid">
-            <div className="flex justify-between items-baseline break-after-avoid">
+            <div className="flex flex-wrap justify-between items-baseline gap-x-4 break-after-avoid">
               <h4 className="text-lg font-semibold text-black">IT Intern</h4>
-              <span className="text-sm text-neutral-800 tabular-nums">
+              <span className="shrink-0 text-sm text-neutral-800 tabular-nums">
                 May 2012 - Jul 2012; May 2013 - Jul 2013
               </span>
             </div>
@@ -375,14 +375,14 @@ const ResumeContent = () => {
 
         <div className="mb-5">
           <div className="break-inside-avoid">
-            <div className="flex justify-between items-baseline mb-1 break-after-avoid">
+            <div className="flex flex-wrap justify-between items-baseline gap-x-4 mb-1 break-after-avoid">
               <h4 className="text-lg font-semibold text-black">
                 MS in Computer Science{" "}
                 <span className="text-sm font-normal text-neutral-800 align-baseline">
                   · Artificial Intelligence
                 </span>
               </h4>
-              <span className="text-sm text-neutral-800 tabular-nums">
+              <span className="shrink-0 text-sm text-neutral-800 tabular-nums">
                 2015 - 2017
               </span>
             </div>
@@ -410,14 +410,14 @@ const ResumeContent = () => {
 
         <div className="mb-5">
           <div className="break-inside-avoid">
-            <div className="flex justify-between items-baseline mb-1 break-after-avoid">
+            <div className="flex flex-wrap justify-between items-baseline gap-x-4 mb-1 break-after-avoid">
               <h4 className="text-lg font-semibold text-black">
                 BS in Computer Science{" "}
                 <span className="text-sm font-normal text-neutral-800 align-baseline">
                   · Minor in Cognitive Science
                 </span>
               </h4>
-              <span className="text-sm text-neutral-800 tabular-nums">
+              <span className="shrink-0 text-sm text-neutral-800 tabular-nums">
                 2011 - 2015
               </span>
             </div>
@@ -441,7 +441,7 @@ const ResumeContent = () => {
         </h3>
 
         <div className="space-y-3">
-          <div className="flex justify-between items-baseline break-after-avoid">
+          <div className="flex justify-between items-baseline gap-x-4 break-after-avoid">
             <div>
               <h4 className="text-lg font-semibold text-black">
                 &quot;Therabot™: A Robotic Support Companion&quot;
@@ -455,10 +455,12 @@ const ResumeContent = () => {
                 Conference on Human-Robot Interaction, pp. 37-37. ACM, 2018.
               </p>
             </div>
-            <span className="text-sm text-neutral-800 tabular-nums">2018</span>
+            <span className="shrink-0 text-sm text-neutral-800 tabular-nums">
+              2018
+            </span>
           </div>
 
-          <div className="flex justify-between items-baseline break-after-avoid">
+          <div className="flex justify-between items-baseline gap-x-4 break-after-avoid">
             <div>
               <h4 className="text-lg font-semibold text-black">
                 &quot;ANVEL-ROS: The integration of the robot operating system
@@ -474,7 +476,9 @@ const ResumeContent = () => {
                 p. 378. 2015.
               </p>
             </div>
-            <span className="text-sm text-neutral-800 tabular-nums">2015</span>
+            <span className="shrink-0 text-sm text-neutral-800 tabular-nums">
+              2015
+            </span>
           </div>
         </div>
       </div>

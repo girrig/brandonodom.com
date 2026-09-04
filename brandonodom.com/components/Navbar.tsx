@@ -13,6 +13,38 @@ const Navbar = () => {
   // The hamburger only exists on mobile, where there is no hover, so the
   // animation is driven by a tap instead
   const menuIconRef = useRef<IconHandle>(null);
+  const menuRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+
+  // Close an open menu on Escape or a tap outside of it
+  useEffect(() => {
+    if (!isMenuOpen) return;
+
+    const handlePointerDown = (event: PointerEvent) => {
+      const target = event.target as Node;
+      if (
+        menuRef.current?.contains(target) ||
+        buttonRef.current?.contains(target)
+      ) {
+        return;
+      }
+      setIsMenuOpen(false);
+    };
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key !== "Escape") return;
+      setIsMenuOpen(false);
+      // The panel is about to go invisible, so focus cannot stay inside it
+      buttonRef.current?.focus();
+    };
+
+    document.addEventListener("pointerdown", handlePointerDown);
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.removeEventListener("pointerdown", handlePointerDown);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isMenuOpen]);
 
   // Close mobile menu when we switch pages
   useEffect(() => {
@@ -88,10 +120,12 @@ const Navbar = () => {
 
         {/* Hamburger Menu Button (visible only on mobile) */}
         <button
-          className="hidden max-sm:flex items-center p-2 text-muted"
+          ref={buttonRef}
+          className="hidden max-sm:flex items-center p-2.5 text-muted"
           onClick={() => {
             setIsMenuOpen(!isMenuOpen);
-            menuIconRef.current?.startAnimation();
+            // Queued for the next paint, when the ref holds the swapped-in icon
+            requestAnimationFrame(() => menuIconRef.current?.startAnimation());
           }}
           aria-label="Toggle menu"
         >
@@ -104,10 +138,11 @@ const Navbar = () => {
 
         {/* Mobile Dropdown Menu */}
         <div
+          ref={menuRef}
           className={`absolute top-20 right-0 w-40 bg-card border border-line rounded-bl-md shadow-md transition-all duration-300 z-20 ${
             isMenuOpen
-              ? "max-h-80 opacity-100"
-              : "max-h-0 opacity-0 pointer-events-none overflow-hidden"
+              ? "max-h-80 opacity-100 visible"
+              : "max-h-0 opacity-0 invisible overflow-hidden"
           }`}
         >
           <div className="pl-4 pr-8 py-2 flex flex-col">
