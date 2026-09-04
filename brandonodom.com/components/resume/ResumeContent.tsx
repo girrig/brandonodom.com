@@ -9,9 +9,9 @@ const ResumeContent = () => {
       <div className="mb-12">
         <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between sm:gap-10">
           <div>
-            <h1 className="text-4xl font-medium tracking-tight text-black mb-1">
+            <h2 className="text-4xl font-medium tracking-tight text-black mb-1">
               Brandon Odom
-            </h1>
+            </h2>
             <h2 className="text-xl text-neutral-600">Software Engineer</h2>
           </div>
 

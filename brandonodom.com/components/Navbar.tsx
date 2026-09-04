@@ -128,6 +128,8 @@ const Navbar = () => {
             requestAnimationFrame(() => menuIconRef.current?.startAnimation());
           }}
           aria-label="Toggle menu"
+          aria-expanded={isMenuOpen}
+          aria-controls="mobile-menu"
         >
           {isMenuOpen ? (
             <XIcon ref={menuIconRef} size={24} />
@@ -138,6 +140,7 @@ const Navbar = () => {
 
         {/* Mobile Dropdown Menu */}
         <div
+          id="mobile-menu"
           ref={menuRef}
           className={`absolute top-20 right-0 w-40 bg-card border border-line rounded-bl-md shadow-md transition-all duration-300 z-20 ${
             isMenuOpen

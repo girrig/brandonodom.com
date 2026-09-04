@@ -28,9 +28,9 @@ const PortfolioPage = () => {
                 </div>
               </div>
               <div className="w-full md:w-1/2">
-                <h3 className="text-xl font-medium mb-2">
+                <h2 className="text-xl font-medium mb-2">
                   CodeStar and CodeCatalyst
-                </h3>
+                </h2>
                 <div className="text-xs tracking-wider uppercase text-muted-soft mb-3 sm:mb-4">
                   Java / CloudFormation / Templates
                 </div>
@@ -77,7 +77,7 @@ const PortfolioPage = () => {
                 </div>
               </div>
               <div className="w-full md:w-1/2">
-                <h3 className="text-xl font-medium mb-2">Therabot</h3>
+                <h2 className="text-xl font-medium mb-2">Therabot</h2>
                 <div className="text-xs tracking-wider uppercase text-muted-soft mb-3 sm:mb-4">
                   JavaScript / Three.js / UIkit / Autodesk Maya / Robotics
                 </div>
@@ -124,7 +124,7 @@ const PortfolioPage = () => {
                 </div>
               </div>
               <div className="w-full md:w-1/2">
-                <h3 className="text-xl font-medium mb-2">ANVEL-ROS</h3>
+                <h2 className="text-xl font-medium mb-2">ANVEL-ROS</h2>
                 <div className="text-xs tracking-wider uppercase text-muted-soft mb-3 sm:mb-4">
                   Python / C++ / ANVEL / ROS / Robotics
                 </div>
@@ -174,7 +174,7 @@ const PortfolioPage = () => {
                 </div>
               </div>
               <div className="w-full md:w-1/2">
-                <h3 className="text-xl font-medium mb-2">Llama Game</h3>
+                <h2 className="text-xl font-medium mb-2">Llama Game</h2>
                 <div className="text-xs tracking-wider uppercase text-muted-soft mb-3 sm:mb-4">
                   Python / Pygame
                 </div>
@@ -214,7 +214,7 @@ const PortfolioPage = () => {
                 </div>
               </div>
               <div className="w-full md:w-1/2">
-                <h3 className="text-xl font-medium mb-2">Houses of Cards</h3>
+                <h2 className="text-xl font-medium mb-2">Houses of Cards</h2>
                 <div className="text-xs tracking-wider uppercase text-muted-soft mb-3 sm:mb-4">
                   JavaScript / Socket.IO
                 </div>
